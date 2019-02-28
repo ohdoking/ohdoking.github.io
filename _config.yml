@@ -3,7 +3,7 @@ name: Dokeun OH
 bio: A Man who live in Berlin
 
 # twitter summary info
-description: A blog about technology and stuff related
+description: I've worked as Java Backend developer for 3 and half years in Korea.
 
 # if it's an external image, update below for true
 # better with square images
@@ -34,38 +34,32 @@ disqus:
   categories: [blog, project] # only show disqus for posts that have these categories
 
 # if you don't have any of social below, comment the line
-facebook: myfacebook
-twitter: mytwitter
+#facebook: myfacebook
+#twitter: mytwitter
 # google: mygoogle
 # instagram: myinstagram
 # pinterest: mypinterest
-# linkedin: mylinkedin
+linkedin: dokeun-oh-42228aba/
 # youtube: myyoutube
 # spotify: myspotify
-github: mygithub
+github: ohdoking
 # gitlab: mygitlab
 # lastfm: mylastfm
 # stackoverflow: 7044681/mystackoverflow
 # quora: userquora
 # reddit: username
-medium: medium
+# medium: medium
 # vimeo: myvimeo
 # lanyrd: mylanyrd
-email: myemail@gmail.com
+email: ohdoking@gmail.com
 
 authors:
-    johndoe:
-        name: John Doe
+    dokeunoh:
+        name: Dokeun Oh
         bio: A Man who travels the world eating noodles
         external-image: false
         picture: assets/images/profile.jpg
-        twitter: johndoe
-    jamesfoster:
-        name: James Foster
-        bio: A Man who develops software with coffee
-        external-image: false
-        picture: assets/images/james.jpg
-        twitter: jamesfoster
+        twitter: ohdoking
 
 # do you want a larger site? change the option below
 # options: [normal, large] | default: normal
