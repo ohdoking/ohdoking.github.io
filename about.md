@@ -4,43 +4,49 @@ layout: page
 ---
 ![Profile Image]({{ site.url }}/{{ site.picture }})
 
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<p>Since 2014, After I worked for 2 company and have IT club activities, I have diverse develop experience.  
+My role was that full-stack develop and open source called Cloud Foundry (PAAS) analysis in SoftwareInLife company for 2 years and 6 months. I learned about how I should make kind of application structure and method of developing web service. 
+My role was that back-end develops in NiceDNB company for a year. At the time, I learned about how I make SQL query and method of developing backend application and how I refactor old code. 
+And I developed an android application and tutored university students in IT club named YAPP for 2 years.
+</p>
 
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<p>My technical expertise includes web publishing (including HTML, CSS), fluency in 3 scripting/ programming languages (including Javascript, Java and SQL), experiencing front-end/back-end frameworks(including Spring, AngularJs, BackboneJs) and cloud-based knowledge(including AWS, GCP) and experiencing to use container(including Docker) and advanced knowledge of developer applications, tools, methodologies and best practices (including OOP, TDD, client/ server architecture and self-test automation).</p>
 
 <h2>Skills</h2>
 
 <ul class="skill-list">
-	<li>HTML - Jade - Haml - Erb</li>
-	<li>Responsive (Mobile First)</li>
-	<li>CSS (Stylus, Sass, Less)</li>
-	<li>Css Frameworks (Bootstrap, Foundation)</li>
+	<li>Java</li>
+	<li>Java Frameworks (Spring, Spring Boot, Hibernate)</li>
+	<li>Junit</li>
+	<li>MySQL - Oracle - MongoDB - Firebase</li>
+	<li>HTML</li>
+	<li>CSS (Sass)</li>
+	<li>Css Frameworks (Bootstrap)</li>
 	<li>Javascript (Design Patterns, Testes)</li>
 	<li>NodeJS</li>
-	<li>AngularJS - ReactJS</li>
-	<li>Grunt - Gulp - Yeoman</li>
+	<li>AngularJS</li>
+	<li>Webpack</li>
+	<li>Selenium</li>
 	<li>Git</li>
-	<li>PHP</li>
-	<li>Python</li>
-	<li>MySQL - MongoDB</li>
-	<li>Scrum and Kanban</li>
-	<li>TDD e Continuous Integration</li>
+	<li>GCP(Google Cloud Platform) - AWS</li>
+	<li>Docker</li>
+	<li>Agile - Kanban</li>
+	<li>TDD - Continuous Integration</li>
 </ul>
 
 <h2>Projects</h2>
 
 <ul>
-	<li><a href="https://github.com/">Lorem Lorem</a></li>
-	<li><a href="https://github.com/">Ipsum Dolor</a></li>
-	<li><a href="https://github.com/">Dolor Lorem</a></li>
+</ul>
+
+<h2>Personal Projects</h2>
+
+<ul>
+	<li><a href="https://github.com/ohdoking/useful-tool-microservices-proeject">Useful Tools for me</a></li>
+	<li><a href="https://github.com/ohdoking/Dansoon">Dansoon(meaning is simple)</a></li>
+	<li><a href="https://github.com/ohdoking/KindPickyEatingServer">Kind picky Eating</a></li>
+	<li><a href="https://github.com/jiniC/UnitonPinminder">PinMinder</a></li>
+	<li><a href="https://github.com/ohdoking/FallHurtPreventionApp">FallHurt Prevention</a></li>
+	<li><a href="https://github.com/ohdoking/pic6inyapp">PIC</a></li>
+	<li><a href="https://github.com/ohdoking/FloatingApp">All in one membership card</a></li>
 </ul>
