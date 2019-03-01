@@ -57,6 +57,29 @@ The partitions of the log are distributed over the servers in the Kafka cluster 
 
 Each partition has one server which acts as the "leader" and zero or more servers which act as "followers". The leader handles all read and write requests for the partition while the followers passively replicate the leader. If the leader fails, one of the followers will automatically become the new leader. Each server acts as a leader for some of its partitions and a follower for others so load is well balanced within the cluster.
 
+## Producers
+
+Producers publish data to the topics of their choice. The producer is responsible for choosing which record to assign to which partition within the topic. This can be done in around-roblin fashion simply to balance load or it can be done according to some semantic partition function(say based on some key in the record). More on the use of partitioning in a second.
+
+## Consumers
+
+Consumers label themselves with consumer group name, and each record published topic is delivered to one consumer instance within each subscribing consumer group. Consumer instances cna be ins separate processes or on separate machines.
+
+If all the consumer instance have the same consumer group, then the records will effectively be load balanced over the consumer instances. 
+
+If all the consumer instances have different consumer groups, then each record will be broadcast to all the consumer processes.
+
+![Consumers](https://kafka.apache.org/21/images/consumer-groups.png)
+
+A two server Kafka cluster hosting four patitions(P0 - P3) with two consumer groups. Consumer group A has two consumer instances and group B has four.
+
+More commonly, however, we have found that topics have a small number of consumer group, one for each "logical subscriber". Each group is composed of many consumer instances for scalability and fault tolerance. This is nothing more than publish-subscribe semantics where the subscriber is a cluster of consumers instead of a single process.
+
+The way consumption is implemented in Kafka is by dividing up the partitions in the log over the consumer instances so that each instance is the exclusive consumer of a "fair share" of partitions at any point in time. This process of maintaining meembership in the group is handled by the Kafka protocol dynamically. If new instances join the group they will take over some partitions from other memebers of the group; if an instance dies, its partitions will be distributes to the remaining instances. 
+
+Kafka only provides a total order over records within a partition, not between different partitions in a topic. Perpartition ordering combined with the ability to partition data by key is sufficient for most applications. However, if you require a total order over records this can be achieved with a topic that has only one partition, though this will mean only one consumer process per consumer group.
+
+
 
 ## Reference 
 - https://kafka.apache.org/intro
