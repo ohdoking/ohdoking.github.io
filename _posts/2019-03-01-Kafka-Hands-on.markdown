@@ -24,7 +24,7 @@ Our development cluster will consist of:
 
 We will also configure all three parts to be accessible both from other docker containers and from your host machine.
 
-1. Zookeeper
+## Zookeeper
 
 The most important options to provide to Zookeeper are this instance ID, client port, and the list of all servers in the cluster.
 So we should configure 3 things like below. 
@@ -63,7 +63,7 @@ zookeeper-1:
 
 Notice that we are very explicit with hostname, service name, and they shall match what's in the Zookeeper configuration environment.
 
-2. Kafka (broker)
+## Kafka (broker)
 
 We need specify the broker ID, point it to previously configured Zookeeper, and configure the listeners and advertisers. 
 Notice that we configure the broker so we can access it both via kafka-1:9020 from other docker containers and local:29092 from your house machine.
@@ -140,7 +140,7 @@ The service description only adds zookeeper-1 dependency and a volume for Kafka 
       - kafka-1-data:/var/lib/kafka/data/
 ```
 
-3. Schema registry
+## Schema registry
 
 The Schema registry is the easiest to configure. Here’s the environment:
 
@@ -166,7 +166,7 @@ and the service:
       - schema-registry.env
 ```
 
-4. kafka-console-producer
+## Running it all together
 
 we can start the whole stack with just `docker-compose up`!
 
