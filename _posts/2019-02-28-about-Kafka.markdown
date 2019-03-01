@@ -79,7 +79,9 @@ The way consumption is implemented in Kafka is by dividing up the partitions in 
 
 Kafka only provides a total order over records within a partition, not between different partitions in a topic. Perpartition ordering combined with the ability to partition data by key is sufficient for most applications. However, if you require a total order over records this can be achieved with a topic that has only one partition, though this will mean only one consumer process per consumer group.
 
+## Multi-tenancy 
 
+You can deploy Kafka as a multi-tenant solution. Multi-tenancy is enabled by configuring which topics can produce or consume data. There is also operations support for quotas. Administrator can define and enforce quotas on requrests to control the broker resources that are used by clients. For more information, see the [security documentation](https://kafka.apache.org/documentation/#security) 
 
 ## Reference 
 - https://kafka.apache.org/intro
