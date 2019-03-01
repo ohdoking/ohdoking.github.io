@@ -27,6 +27,8 @@ When “broker” accumulate message that is received with classifying based on 
 
 ![Kafka how it works](https://t1.daumcdn.net/cfile/tistory/270D49435509151E2A)
 
+offset < partition < topic < broker < Kafka cluster
+
 ## Topic and Logs
 
 Let’s first dive into the core abstraction Kafka provides for a stream of records- the topic.
@@ -49,7 +51,15 @@ This combination of features means that Kafka consumers are very cheap-they can 
 
 The partitions in the log serve several purpose. First they allow the log to scale beyond a size that will fit on single server. Each individual partition must fit on the serves that host it, but a topic may have many partitions so it can handle an arbitrary amount of data. Second they act as the unit of parallelism-more on that in a bit.
 
+## Distribution
+
+The partitions of the log are distributed over the servers in the Kafka cluster with each server handling data and requests for a share of the partitions. Each partition is replicated across a configurable number of servers for fault tolerance. 
+
+Each partition has one server which acts as the "leader" and zero or more servers which act as "followers". The leader handles all read and write requests for the partition while the followers passively replicate the leader. If the leader fails, one of the followers will automatically become the new leader. Each server acts as a leader for some of its partitions and a follower for others so load is well balanced within the cluster.
+
+
 ## Reference 
+- https://kafka.apache.org/intro
 - https://epicdevs.com/17
 - https://soul0.tistory.com/499
 - https://medium.com/zaneiru-tech-life-blog/pub-sub-%EB%AA%A8%EB%8D%B8%EC%97%90-%EB%8C%80%ED%95%B4%EC%84%9C-daa3c5c52aa8
