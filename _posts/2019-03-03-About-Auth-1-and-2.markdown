@@ -1,7 +1,7 @@
 ---
 title: "About OAuth 1.0 and 2.0"
 layout: post
-date: 2018-03-01 10:44
+date: 2018-03-03 10:44
 image: /assets/images/markdown.jpg
 headerImage: false
 tag:
@@ -18,9 +18,9 @@ description: About OAuth 1.0 and 2.0
 
 OAuth (or Open Authorization) is a framework that gives users the ability to grant access to their information stored in one place, from another place.
 
- 3-legged OAuth
+3-legged OAuth
 
-- OAuth vs login
+### OAuth vs login
     - Oauth is like someone enter company with Visitation(방문증).
     - Login is like company employee enters company building .
 - OAuth is not only Authentication(인증) but also including authorization(허가).
@@ -29,7 +29,8 @@ OAuth (or Open Authorization) is a framework that gives users the ability to gra
     - OAuth main purpose is Authorization.
 - OAuth Dance
     - OAuth Dance is User authentication process using OAuth
-- OAuth representative term
+
+### OAuth representative term
     - User
         - User wants to use the Consumer with having account in the Service Provider
     - Service Provider
@@ -42,7 +43,8 @@ OAuth (or Open Authorization) is a framework that gives users the ability to gra
     - Access Token 
         - After authentication, value containing the key for the Consumer access the resource of the Service provider
         - Like visiting card
-- OAuth authentication process
+
+### OAuth authentication process
     1. Request and issue of Request Token
     2. Invoke user authentication page. 
     3. Complete user login
@@ -58,12 +60,13 @@ OAuth (or Open Authorization) is a framework that gives users the ability to gra
 
 ## OAuth 2.0
 
-- Oauth2.0 representative term
+### Oauth2.0 representative term
     - Roles
     - Grant types
     - Access tokens
     - Refresh token
-- Roles
+
+#### Roles
     - Resource Owner
         - User
     - Resource Server 
@@ -72,7 +75,8 @@ OAuth (or Open Authorization) is a framework that gives users the ability to gra
         - Authorization Server(can be as same as API Server)
     - Client
         - 3-party application(Service)
-- OAuth 2.0 characteristic.
+
+#### OAuth 2.0 characteristic.
     - Reinforce application support, not web application.
     - No encryption is required. Use HTTPS, Don’t use HMAC
     - Signature simplification alignment and URL encoding is not required.
@@ -84,7 +88,8 @@ OAuth (or Open Authorization) is a framework that gives users the ability to gra
     - Support further more authentication method
     - Support extension of huge service
         - possible to detach or multiplex authentication servers
-- Grant types
+
+#### Grant types
     - Authorization code 
         - 웹 서버에서 API를 호출하는 등의 시나리오에서 Confidential Client가 사용하는 방식이다. 서버사이드 코드가 필요한 인증 방식이며 인증 과정에서 client_secret 이 필요하다. 로그인시에 페이지 URL에 response_type=code 라고 넘긴다.
     - implicit
@@ -96,10 +101,12 @@ OAuth (or Open Authorization) is a framework that gives users the ability to gra
     - Device code
     - Refresh token
     - Extension
-- Access tokens
+
+#### Access tokens
     - Access tokens represent your authorization to access the resource owner’s information on the resource server.
     - You’re required to exchange your grant for an access token, which will have an expiry time
-- Refresh Tokens
+
+#### Refresh Tokens
     - Refresh tokens are a special type of token that can be held securely by the client with the express purpose of being able to request a new access token from the authorization server once the original access token has expired. These can also expired, but are generally long live with expiry time that can be as long as 14 days or more
 
 
