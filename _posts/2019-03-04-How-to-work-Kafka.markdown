@@ -5,8 +5,11 @@ date: 2018-03-04 20:44
 image: /assets/images/markdown.jpg
 headerImage: false
 tag:
-- markdown
-- elements
+- Apache
+- Kafka
+- Spring
+- Spring Boot
+- Docker
 star: true
 category: blog
 author: Dokeun Oh
@@ -14,7 +17,7 @@ description: How to Work with Apache Kafka in Your Spring Boot Application and D
 ---
 # How to Work with Apache Kafka in Your Spring Boot Application and Docker
 
-## Step1. Installation and Setup
+## Step1: Installation and Setup
 
 After set up Kafka with docker.
 What you set Kafka environment with docker can be found [here](http://ohdoking.github.io//Kafka-Hands-on/),
@@ -27,7 +30,7 @@ We also need to add the `spring-kafka` depenency to our `pom.xml`
     <version>2.2.2.RELEASE</version>
 </dependency>
 ```
-## Step2. Project create 
+## Step2: Project create 
 
 Let's make 2 projects, Which name are Kafka-consumer project and Kafka-producer like this:
 
@@ -52,7 +55,7 @@ Let's make 2 projects, Which name are Kafka-consumer project and Kafka-producer 
 ```
 
 
-## Step3. Publish/read messages from the Kafka topic
+## Step3: Publish/read messages from the Kafka topic
 
 Now you can see what it looks like.
 Start by creating a simple java class, which we will use for our example. `package.com.ohdoking.models`
@@ -70,7 +73,7 @@ public class User {
 }
 ```
 
-## Step4. Configure Kafka through application.yml configuration file
+## Step4: Configure Kafka through application.yml configuration file
 
 Next, we need to create the configuration file. we need to somehow configure our Kafka producer and consumer to be able to publish and read messages to and from the topic.
 
@@ -142,7 +145,7 @@ public class Consumer {
 
 Here, we told our method `void consume(String message)` to subscribe to the user's topic and just emit every message to the application log. in your real application, you can handle messages the way your business requires you to.
 
-## Step 7, Create a REST controller
+## Step 7: Create a REST controller
 
 To fully show how everything that we created works, we need to create a controller with single endpoint. The message will be published to this endpoint, and then handled by our producer. 
 
@@ -167,7 +170,7 @@ public class KafkaController {
 }
 ```
 
-## Step 8, Excute docker-compose and test
+## Step 8: Excute docker-compose and test
 
 Now you build maven and execute docker. 
 
