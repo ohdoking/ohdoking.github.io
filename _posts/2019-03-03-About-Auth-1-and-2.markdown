@@ -5,8 +5,8 @@ date: 2018-03-03 10:44
 image: /assets/images/markdown.jpg
 headerImage: false
 tag:
-- markdown
-- elements
+- OAuth1.0
+- OAuth2.0
 star: true
 category: blog
 author: Dokeun Oh

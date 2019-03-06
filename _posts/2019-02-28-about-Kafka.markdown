@@ -5,8 +5,7 @@ date: 2018-02-28 10:44
 image: /assets/images/markdown.jpg
 headerImage: false
 tag:
-- markdown
-- elements
+- Kafka
 star: true
 category: blog
 author: Dokeun Oh

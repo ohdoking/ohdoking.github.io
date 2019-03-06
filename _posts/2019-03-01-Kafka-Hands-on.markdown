@@ -5,8 +5,9 @@ date: 2018-03-01 10:44
 image: /assets/images/markdown.jpg
 headerImage: false
 tag:
-- markdown
-- elements
+- Kafka
+- Apache
+- ZooKeeper
 star: true
 category: blog
 author: Dokeun Oh
