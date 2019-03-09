@@ -109,6 +109,46 @@ OAuth (or Open Authorization) is a framework that gives users the ability to gra
 #### Refresh Tokens
     - Refresh tokens are a special type of token that can be held securely by the client with the express purpose of being able to request a new access token from the authorization server once the original access token has expired. These can also expired, but are generally long live with expiry time that can be as long as 14 days or more
 
+## OpenID Connect
+
+### What is OpenID Connect
+  - Open ID Connect was developed by extending Oauth2.
+  - Open ID Connect 
+    1. Send Authorization Request including scope value as OpenID
+    2. Return JWT as ID Token that is Authentication infomation
+  - Open ID provider(OP)
+        1. Oauth 2.0 Authentication Server that is capable of Authenticating the End-User and providing claims to a relying party about the authentication event and End-User.
+### ID Token
+  - It is token that is encrypted containing a claims about Authenticating of End-User (최종 사용자의 인증에 대한 클레임으로 암호화 된 토큰입니다.)
+    1. Iss
+      Unique identification value about issuing Id Token(host, port)
+    2. Sub
+      Unique value about End-User.
+    3. Aud
+      Audience, client id related in ID token
+    4. Exp
+      Time expire time
+    5. iat
+      Time issued JWT
+    6. Auth_time
+      Time the end user was authenticated
+    7. nonce
+    8. Arc
+      Authentication context class reference
+    9. Amr
+      Authentication method reference
+    10. App
+      Authorized party
+### OpenId Connect Authentication Flow
+  - 3 kind of Flow
+    * Authorization Code Flow
+    * Implicit(절대적인, 함축적인) Flow
+    * Hybrid Flow
+  - characteristics
+    * All tokens returned from authorization endpoint
+    * All tokens retuned from token endpoint
+### Response type
+
 
 ## Reference 
 - https://d2.naver.com/helloworld/24942
@@ -117,3 +157,6 @@ OAuth (or Open Authorization) is a framework that gives users the ability to gra
 - https://oauth.net/2/
 - http://blog.weirdx.io/post/39955
 - https://opentutorials.org/course/2473/16571
+- https://openid.net/specs/openid-connect-core-1_0.html#IDToken
+- https://connect2id.com/learn/openid-connect
+- https://medium.com/@darutk/diagrams-of-all-the-openid-connect-flows-6968e3990660
