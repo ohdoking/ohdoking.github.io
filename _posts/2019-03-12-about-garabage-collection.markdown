@@ -1,5 +1,5 @@
 ---
-title: "About Garabage Collection"
+title: "About Garbage Collection"
 layout: post
 date: 2019-03-12 20:44
 image: /assets/images/markdown.jpg
@@ -11,9 +11,9 @@ tag:
 star: true
 category: blog
 author: Dokeun Oh
-description: About Garabage Collection
+description: About Garbage Collection
 ---
-# About Garabage Collection
+# About Garbage Collection
 
 ## What is automatic garbage collection ?
 
