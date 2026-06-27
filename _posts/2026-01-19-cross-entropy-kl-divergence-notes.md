@@ -14,6 +14,7 @@ study_category: "AI"
 origin: notion
 import_batch: notion-batch-2
 source_note: "AI/Cross Entropy and KL Divergence"
+description: "Cross entropy and KL divergence show up repeatedly in classification and probabilistic modeling. They help compare predicted distributions with target distributions."
 ---
 
 > Refined from a private Notion study note. This public version keeps the reusable technical ideas and removes private scratch content, event logistics, and copied reference material.

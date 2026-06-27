@@ -13,6 +13,7 @@ study_category: "Programming"
 origin: notion
 import_batch: notion-batch-2
 source_note: "Programming/Socket"
+description: "Sockets are the low-level boundary behind many familiar network abstractions. Studying them helps explain why connection lifecycle, buffering, and timeouts matter."
 ---
 
 > Refined from a private Notion study note. This public version keeps the reusable technical ideas and removes private scratch content, event logistics, and copied reference material.

@@ -1,7 +1,14 @@
 - name: InfraPal
+  slug: infrapal
+  featured: true
   source: Serverless Salad
   type: AI infrastructure product
+  role: CTO and backend architect
   summary: "Multi-agent AI system for cloud optimization and Infrastructure as Code automation."
+  highlights:
+    - "Built a FastAPI-based backend and multi-agent workflow for cloud optimization and IaC automation."
+    - "Designed AWS and Kubernetes deployment architecture with Terraform-driven operations."
+    - "Focused on security, cost visibility, and production-oriented cloud workflows."
   stack:
     - Python
     - FastAPI
@@ -11,45 +18,79 @@
     - OpenAI
     - Terraform
 - name: Smoothy
+  slug: smoothy
+  featured: true
   source: Big Berlin Hack 2026
   type: Hackathon project
+  role: Builder and backend/AI contributor
   summary: "Dual-brain AI voice companion for elderly users, combining instant conversation with health monitoring."
   recognition: "1st place overall, telli and ai-coustics Voice AI Track winner, Gradium Side Challenge winner"
+  highlights:
+    - "Combined real-time conversation with a second AI path for health-related monitoring."
+    - "Framed the product around practical voice interaction quality instead of a generic chatbot demo."
+    - "Turned the hackathon prototype into a strong public proof point for applied AI product work."
   stack:
     - AI voice
     - Multi-agent systems
     - Health monitoring
 - name: STAR-UP
+  slug: star-up
+  featured: true
   source: BAD1 Hackathon
   type: Hackathon project
+  role: AI platform builder
   url: https://github.com/hrmomeni/starup
   summary: "AI platform connecting researchers, founders, and investors."
   recognition: "1st place overall and Track 1 winner; invited to present to the Mayor of Berlin at BAD1 Conference"
+  highlights:
+    - "Focused on matching people across research, startup, and investment workflows."
+    - "Used the project as a proof point for platform thinking, AI-assisted discovery, and fast product framing."
+    - "Won both the overall prize and Track 1 in the BAD1 hackathon."
   stack:
     - AI
     - Platform engineering
+  links:
+    - label: Repository
+      url: https://github.com/hrmomeni/starup
 - name: AI Safety Chrome Extension
+  slug: ai-safety-chrome-extension
   source: SAP and KPMG AI Cybersecurity Hackathon 2025
   type: Hackathon project
+  role: AI and browser tooling builder
   summary: "Local AI Chrome extension designed to protect kids from toxic AI content."
   recognition: "1st place overall"
+  highlights:
+    - "Built a local AI browser extension focused on harmful content detection and safety assistance."
+    - "Kept the solution lightweight and privacy-aware by leaning on local AI capabilities."
   stack:
     - Chrome Built-in AI
     - Local AI
     - Browser extension
 - name: Misstery
+  slug: misstery
   source: Agentic FinAI Hackathon 2026
   type: Solo hackathon project
+  role: Solo builder
   summary: "Transcript analysis tool that detects cognitive gaps using cognee and Dify."
   recognition: "Dify Track Prize"
+  highlights:
+    - "Built a solo project around transcript analysis, knowledge structure, and AI-assisted reasoning."
+    - "Used the hackathon as a focused experiment in fast agentic workflow design."
   stack:
     - Dify
     - cognee
     - Agentic AI
 - name: Iomoto Service
+  slug: iomoto-service
+  featured: true
   source: ZF car eWallet
   type: Production backend platform
+  role: Backend developer
   summary: "Microservice platform for mobility services."
+  highlights:
+    - "Implemented and maintained microservices for a production mobility platform."
+    - "Worked across Java services, messaging, databases, cloud infrastructure, and platform operations."
+    - "Used the role to deepen experience with resilient service design in a long-running production system."
   stack:
     - Java 11
     - Spring Boot
@@ -61,9 +102,14 @@
     - Kubernetes
     - Terraform
 - name: Aristoteles 2.0
+  slug: aristoteles-2
   source: Ampero GmbH
   type: Production backend platform
+  role: Backend developer
   summary: "Renewable energy portfolio service with optimized data ingestion connector pipelines."
+  highlights:
+    - "Implemented core backend work for a renewable energy portfolio service."
+    - "Improved ingestion connector pipelines and the reliability of domain data processing."
   stack:
     - Kotlin
     - Spring Boot

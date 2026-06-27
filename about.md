@@ -1,6 +1,7 @@
 ---
 title: About
 layout: page
+description: About Dokeun Oh, a backend engineer in Berlin building reliable cloud platforms, distributed services, and practical AI systems.
 ---
 ![Profile Image]({{ site.url }}/{{ site.picture }})
 

@@ -13,6 +13,7 @@ study_category: "AI"
 origin: notion
 import_batch: notion-batch-2
 source_note: "AI/RNN"
+description: "Recurrent neural networks model sequences by carrying state across steps. They are historically important for understanding sequence learning before modern..."
 ---
 
 > Refined from a private Notion study note. This public version keeps the reusable technical ideas and removes private scratch content, event logistics, and copied reference material.

@@ -13,6 +13,7 @@ study_category: "AI"
 origin: notion
 import_batch: notion-batch-2
 source_note: "AI/LSTM"
+description: "LSTM networks improve on simple RNNs by introducing gates that control what to remember, forget, and expose at each step."
 ---
 
 > Refined from a private Notion study note. This public version keeps the reusable technical ideas and removes private scratch content, event logistics, and copied reference material.

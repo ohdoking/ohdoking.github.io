@@ -14,6 +14,7 @@ study_category: "Programming"
 origin: notion
 import_batch: notion-batch-2
 source_note: "Programming/Vector DB"
+description: "Vector databases are becoming a common backend component for semantic search and RAG systems. The core idea is to retrieve by similarity over embeddings instead of exact..."
 ---
 
 > Refined from a private Notion study note. This public version keeps the reusable technical ideas and removes private scratch content, event logistics, and copied reference material.

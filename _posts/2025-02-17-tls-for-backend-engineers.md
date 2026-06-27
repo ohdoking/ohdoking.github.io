@@ -13,6 +13,7 @@ study_category: "Programming"
 origin: notion
 import_batch: notion-batch-2
 source_note: "Programming/TLS"
+description: "TLS is a core backend reliability and security topic. It protects data in transit, authenticates endpoints through certificates, and affects debugging across proxies and..."
 ---
 
 > Refined from a private Notion study note. This public version keeps the reusable technical ideas and removes private scratch content, event logistics, and copied reference material.

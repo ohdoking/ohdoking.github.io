@@ -1,2 +1,3 @@
 User-agent: *
 Disallow:
+Sitemap: https://ohdoking.github.io/sitemap.xml

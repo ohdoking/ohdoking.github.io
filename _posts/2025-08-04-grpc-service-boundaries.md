@@ -13,6 +13,7 @@ study_category: "Programming"
 origin: notion
 import_batch: notion-batch-2
 source_note: "Programming/gRPC"
+description: "gRPC is useful when service contracts, typed schemas, streaming, and efficient binary transport matter. The tradeoff is operational complexity compared with plain REST."
 ---
 
 > Refined from a private Notion study note. This public version keeps the reusable technical ideas and removes private scratch content, event logistics, and copied reference material.

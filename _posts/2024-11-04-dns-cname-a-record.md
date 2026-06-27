@@ -13,6 +13,7 @@ study_category: "Programming"
 origin: notion
 import_batch: notion-batch-2
 source_note: "Programming/DNS에서 CNAME과 A 레코드의 차이"
+description: "DNS records are operational contracts. Knowing the difference between A records and CNAME records helps when configuring domains, certificates, CDN routing, and service..."
 ---
 
 > Refined from a private Notion study note. This public version keeps the reusable technical ideas and removes private scratch content, event logistics, and copied reference material.

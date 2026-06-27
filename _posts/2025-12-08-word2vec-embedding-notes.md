@@ -14,6 +14,7 @@ study_category: "AI"
 origin: notion
 import_batch: notion-batch-2
 source_note: "AI/Word2Vec"
+description: "Word2Vec is a useful entry point for understanding embeddings: words become vectors that capture distributional relationships from text."
 ---
 
 > Refined from a private Notion study note. This public version keeps the reusable technical ideas and removes private scratch content, event logistics, and copied reference material.

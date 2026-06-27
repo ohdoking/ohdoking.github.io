@@ -1,31 +1,55 @@
 ---
 layout: page
 title: Projects
+description: Portfolio projects spanning production backend platforms, hackathon winners, AI tools, and cloud-native product work.
 ---
-<section class="list">
+<section class="projects-overview">
+    <p>
+        This page is the portfolio side of the site: production backend work, hackathon builds, and AI product prototypes collected in one place with clearer context than the blog index.
+    </p>
+</section>
+
+<section class="portfolio-project-grid portfolio-project-grid--full">
     {% for project in site.data.projects %}
-        <div class="item">
+    <article class="portfolio-project-card" id="{{ project.slug | default: project.name | slugify }}">
+        <div class="portfolio-project-card__meta">
+            <span>{{ project.type | default: "Project" }}</span>
+            <span>{{ project.source }}</span>
+        </div>
+        <h2>{{ project.name }}</h2>
+        {% if project.role %}
+        <p class="portfolio-project-card__role">{{ project.role }}</p>
+        {% endif %}
+        <p class="portfolio-project-card__summary">{{ project.summary }}</p>
+        {% if project.recognition %}
+        <p class="portfolio-project-card__recognition">{{ project.recognition }}</p>
+        {% endif %}
+        {% if project.highlights %}
+        <ul class="portfolio-project-card__highlights">
+            {% for highlight in project.highlights %}
+            <li>{{ highlight }}</li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+        {% if project.stack %}
+        <div class="portfolio-chip-list">
+            {% for item in project.stack %}
+            <span>{{ item }}</span>
+            {% endfor %}
+        </div>
+        {% endif %}
+        {% if project.links or project.url %}
+        <div class="portfolio-link-row">
             {% if project.url %}
-            <a class="url" href="{{ project.url }}">
-            {% else %}
-            <div class="url">
+            <a href="{{ project.url }}">Open project</a>
             {% endif %}
-                <aside>{{ project.source | default: project.type | default: "project" }}</aside>
-                <h3 class="title">{{ project.name }}</h3>
-                {% if project.summary %}
-                    <p class="description">{{ project.summary }}</p>
-                {% endif %}
-                {% if project.recognition %}
-                    <p class="description"><strong>{{ project.recognition }}</strong></p>
-                {% endif %}
-                {% if project.stack %}
-                    <p class="description">{{ project.stack | join: ", " }}</p>
-                {% endif %}
-            {% if project.url %}
-            </a>
-            {% else %}
-            </div>
+            {% if project.links %}
+                {% for link in project.links %}
+                <a href="{{ link.url }}">{{ link.label }}</a>
+                {% endfor %}
             {% endif %}
         </div>
+        {% endif %}
+    </article>
     {% endfor %}
 </section>

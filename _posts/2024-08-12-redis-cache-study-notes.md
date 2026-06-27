@@ -13,6 +13,7 @@ study_category: "Programming"
 origin: notion
 import_batch: notion-batch-2
 source_note: "Programming/Redis"
+description: "Redis is often introduced as a cache, but production usage also involves data structures, expiration policy, memory limits, replication, and failure behavior."
 ---
 
 > Refined from a private Notion study note. This public version keeps the reusable technical ideas and removes private scratch content, event logistics, and copied reference material.

@@ -13,6 +13,7 @@ study_category: "AI"
 origin: notion
 import_batch: notion-batch-2
 source_note: "AI/BackPropagation"
+description: "Backpropagation is the mechanism that makes neural network training practical. It computes how much each parameter contributed to the loss by applying the chain rule..."
 ---
 
 > Refined from a private Notion study note. This public version keeps the reusable technical ideas and removes private scratch content, event logistics, and copied reference material.

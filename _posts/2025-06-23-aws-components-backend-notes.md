@@ -14,6 +14,7 @@ study_category: "Programming"
 origin: notion
 import_batch: notion-batch-2
 source_note: "Programming/AWS components"
+description: "AWS services are easier to reason about when grouped by backend responsibility: compute, storage, networking, messaging, identity, observability, and deployment."
 ---
 
 > Refined from a private Notion study note. This public version keeps the reusable technical ideas and removes private scratch content, event logistics, and copied reference material.

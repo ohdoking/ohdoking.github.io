@@ -1,6 +1,7 @@
 ---
 title: Experience
 layout: page
+description: Professional experience across backend engineering roles in Berlin and Seoul, covering cloud platforms, AI systems, and distributed services.
 ---
 
 <h1 class="title">Experience</h1>

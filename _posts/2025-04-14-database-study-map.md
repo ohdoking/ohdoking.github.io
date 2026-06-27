@@ -12,6 +12,7 @@ study_category: "Programming"
 origin: notion
 import_batch: notion-batch-2
 source_note: "Programming/DB"
+description: "This note collects the database topics I repeatedly return to as a backend engineer: modeling, transactions, indexing, replication, isolation, backups, and observability."
 ---
 
 > Refined from a private Notion study note. This public version keeps the reusable technical ideas and removes private scratch content, event logistics, and copied reference material.

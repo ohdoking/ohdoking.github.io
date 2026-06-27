@@ -14,6 +14,7 @@ study_category: "Project"
 origin: notion
 import_batch: notion-batch-2
 source_note: "Project/MS AI Agents Hackathon"
+description: "This note turns the MS AI Agents Hackathon material into a public reflection on what makes an agent project credible."
 ---
 
 > Refined from a private Notion study note. This public version keeps the reusable technical ideas and removes private scratch content, event logistics, and copied reference material.

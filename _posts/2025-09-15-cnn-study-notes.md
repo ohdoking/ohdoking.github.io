@@ -13,6 +13,7 @@ study_category: "AI"
 origin: notion
 import_batch: notion-batch-2
 source_note: "AI/CNN"
+description: "Convolutional neural networks are designed around local spatial structure. They are especially useful when nearby features matter, such as in images."
 ---
 
 > Refined from a private Notion study note. This public version keeps the reusable technical ideas and removes private scratch content, event logistics, and copied reference material.

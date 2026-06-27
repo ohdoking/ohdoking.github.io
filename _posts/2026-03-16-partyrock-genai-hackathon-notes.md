@@ -14,6 +14,7 @@ study_category: "Project"
 origin: notion
 import_batch: notion-batch-2
 source_note: "Project/The PartyRock Generative AI Hackathon by AWS"
+description: "This project note focuses on fast product thinking with managed Gen AI tools: choosing a use case, shaping an interaction, and making the result understandable."
 ---
 
 > Refined from a private Notion study note. This public version keeps the reusable technical ideas and removes private scratch content, event logistics, and copied reference material.

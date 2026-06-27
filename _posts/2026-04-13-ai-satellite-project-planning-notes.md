@@ -14,6 +14,7 @@ study_category: "Project"
 origin: notion
 import_batch: notion-batch-2
 source_note: "Project/AI+Satellite Project"
+description: "This public version keeps the reusable project-planning angle: how AI, satellite data, and geospatial workflows might fit together without exposing private idea details."
 ---
 
 > Refined from a private Notion study note. This public version keeps the reusable technical ideas and removes private scratch content, event logistics, and copied reference material.

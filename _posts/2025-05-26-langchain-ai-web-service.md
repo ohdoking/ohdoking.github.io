@@ -14,6 +14,7 @@ study_category: "Programming"
 origin: notion
 import_batch: notion-batch-2
 source_note: "Programming/create ai web service with LangChain"
+description: "LangChain can speed up LLM application experiments, but a production web service still needs normal backend discipline around boundaries, retries, persistence,..."
 ---
 
 > Refined from a private Notion study note. This public version keeps the reusable technical ideas and removes private scratch content, event logistics, and copied reference material.

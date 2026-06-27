@@ -15,6 +15,7 @@ study_category: "Project"
 origin: notion
 import_batch: notion-batch-2
 source_note: "Project/Meet Up presentation for Running LLM model in local"
+description: "This public version turns a meetup preparation note into a shareable architecture summary for running local LLMs with RAG."
 ---
 
 > Refined from a private Notion study note. This public version keeps the reusable technical ideas and removes private scratch content, event logistics, and copied reference material.

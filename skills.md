@@ -1,6 +1,7 @@
 ---
 title: Skills
 layout: page
+description: Backend, cloud, DevOps, data, messaging, and AI engineering skills used across production systems and product development.
 ---
 
 <h1 class="title">Skills</h1>

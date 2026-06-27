@@ -14,6 +14,7 @@ study_category: "Project"
 origin: notion
 import_batch: notion-batch-2
 source_note: "Programming/2024 02 01 aws gen ai hackerton event"
+description: "This note captures reusable lessons from an AWS Gen AI hackathon: scope the problem, choose managed services carefully, and show the result with a small working flow."
 ---
 
 > Refined from a private Notion study note. This public version keeps the reusable technical ideas and removes private scratch content, event logistics, and copied reference material.

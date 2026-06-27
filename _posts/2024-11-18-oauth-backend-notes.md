@@ -13,6 +13,7 @@ study_category: "Programming"
 origin: notion
 import_batch: notion-batch-2
 source_note: "Programming/OAuth"
+description: "OAuth is easy to misread as login. The cleaner model is delegated authorization: a client receives limited access to a protected resource through tokens and scopes."
 ---
 
 > Refined from a private Notion study note. This public version keeps the reusable technical ideas and removes private scratch content, event logistics, and copied reference material.

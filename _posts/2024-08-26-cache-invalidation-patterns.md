@@ -13,6 +13,7 @@ study_category: "Programming"
 origin: notion
 import_batch: notion-batch-2
 source_note: "Programming/Cache"
+description: "Caching is easy to add and hard to keep correct. The useful question is not whether to cache, but what freshness guarantees the user and system actually need."
 ---
 
 > Refined from a private Notion study note. This public version keeps the reusable technical ideas and removes private scratch content, event logistics, and copied reference material.

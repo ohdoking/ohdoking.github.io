@@ -14,6 +14,7 @@ study_category: "Programming"
 origin: notion
 import_batch: notion-batch-2
 source_note: "Programming/RSA and SHA256"
+description: "RSA and SHA-256 often appear together in digital signatures. SHA-256 hashes the message; RSA signs or verifies the digest using asymmetric keys."
 ---
 
 > Refined from a private Notion study note. This public version keeps the reusable technical ideas and removes private scratch content, event logistics, and copied reference material.

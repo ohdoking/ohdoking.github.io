@@ -14,6 +14,7 @@ study_category: "Programming"
 origin: notion
 import_batch: notion-batch-2
 source_note: "Programming/CompleteFuture"
+description: "CompletableFuture is useful for composing asynchronous work, but its readability depends on disciplined executor usage and explicit error handling."
 ---
 
 > Refined from a private Notion study note. This public version keeps the reusable technical ideas and removes private scratch content, event logistics, and copied reference material.

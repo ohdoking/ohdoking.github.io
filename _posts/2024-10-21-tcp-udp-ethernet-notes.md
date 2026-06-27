@@ -15,6 +15,7 @@ study_category: "Programming"
 origin: notion
 import_batch: notion-batch-2
 source_note: "Programming/TCP UDP and Ethernet"
+description: "This note separates three layers that often get compressed into one mental model: Ethernet for local frames, IP for routing, and TCP or UDP for transport behavior."
 ---
 
 > Refined from a private Notion study note. This public version keeps the reusable technical ideas and removes private scratch content, event logistics, and copied reference material.

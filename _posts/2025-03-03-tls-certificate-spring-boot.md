@@ -14,6 +14,7 @@ study_category: "Programming"
 origin: notion
 import_batch: notion-batch-2
 source_note: "Programming/Using certificate in spring boot"
+description: "Certificate handling in Spring Boot requires understanding application configuration and JVM trust material. The key is knowing which side presents a certificate and..."
 ---
 
 > Refined from a private Notion study note. This public version keeps the reusable technical ideas and removes private scratch content, event logistics, and copied reference material.

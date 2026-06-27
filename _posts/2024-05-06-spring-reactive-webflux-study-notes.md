@@ -14,6 +14,7 @@ study_category: "Programming"
 origin: notion
 import_batch: notion-batch-2
 source_note: "Programming/Spring reactive and WebFlux"
+description: "I wanted to separate where reactive programming helps from where it only adds complexity. WebFlux is useful when a service spends a lot of time waiting on network I/O,..."
 ---
 
 > Refined from a private Notion study note. This public version keeps the reusable technical ideas and removes private scratch content, event logistics, and copied reference material.

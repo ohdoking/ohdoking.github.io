@@ -13,6 +13,7 @@ study_category: "Programming"
 origin: notion
 import_batch: notion-batch-2
 source_note: "Programming/TCP IP"
+description: "TCP/IP remains essential background knowledge for backend debugging. Many application symptoms are easier to explain when the transport layer is not treated as magic."
 ---
 
 > Refined from a private Notion study note. This public version keeps the reusable technical ideas and removes private scratch content, event logistics, and copied reference material.

@@ -1,13 +1,13 @@
-<nav class="{% if page.title == "Home" %}nav-home{% else %}nav{% endif %}">
+<nav class="{% if page.url == "/" %}nav-home{% else %}nav{% endif %}">
     <ul class="list">
-        {% if page.title != "Home" %}
+        {% if page.url != "/" %}
             <li class="item">
                 <a class="link" href="{{ site.url }}/">Home</a>
             </li>
         {% endif %}
 
         {% if site.blog == true %}
-            {% if page.title != "Blog" %}
+            {% if page.url != "/blog/" %}
                 <li class="item">
                     <a class="link" href="{{ site.url }}/blog">Blog</a>
                 </li>
@@ -15,7 +15,7 @@
         {% endif %}
 
         {% if site.study == true %}
-            {% if page.title != "Study" %}
+            {% if page.url != "/study/" %}
                 <li class="item">
                     <a class="link" href="{{ site.url }}/study">Study</a>
                 </li>
@@ -23,7 +23,7 @@
         {% endif %}
 
         {% if site.projects == true %}
-            {% if page.title != "Projects" %}
+            {% if page.url != "/projects/" %}
                 <li class="item">
                     <a class="link" href="{{ site.url }}/projects">Projects</a>
                 </li>
@@ -31,7 +31,7 @@
         {% endif %}
 
         {% if site.experience == true %}
-            {% if page.title != "Experience" %}
+            {% if page.url != "/experience/" %}
                 <li class="item">
                     <a class="link" href="{{ site.url }}/experience">Experience</a>
                 </li>
@@ -39,7 +39,7 @@
         {% endif %}
 
         {% if site.skills == true %}
-            {% if page.title != "Skills" %}
+            {% if page.url != "/skills/" %}
                 <li class="item">
                     <a class="link" href="{{ site.url }}/skills">Skills</a>
                 </li>
@@ -47,7 +47,7 @@
         {% endif %}
 
         {% if site.about == true %}
-            {% if page.title != "About" %}
+            {% if page.url != "/about/" %}
                 <li class="item">
                     <a class="link" href="{{ site.url }}/about">About</a>
                 </li>

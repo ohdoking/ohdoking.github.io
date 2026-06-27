@@ -13,6 +13,7 @@ study_category: "AI"
 origin: notion
 import_batch: notion-batch-2
 source_note: "AI/Stochastic Gradient Descent"
+description: "Stochastic gradient descent is the foundation behind many training loops. The core idea is to update parameters using gradient estimates from small batches of data."
 ---
 
 > Refined from a private Notion study note. This public version keeps the reusable technical ideas and removes private scratch content, event logistics, and copied reference material.

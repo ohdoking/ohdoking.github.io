@@ -1,0 +1,51 @@
+{% assign profile_image = site.picture %}
+{% unless profile_image contains 'http' %}
+    {% assign profile_image = site.url | append: "/" | append: site.picture %}
+{% endunless %}
+
+{% if page.url == "/" or page.url == "/about/" %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": {{ site.name | jsonify }},
+  "url": {{ site.url | jsonify }},
+  "image": {{ profile_image | jsonify }},
+  "jobTitle": "Backend Engineer",
+  "description": {{ site.description | jsonify }},
+  "sameAs": [
+    "https://github.com/{{ site.github }}",
+    "https://www.linkedin.com/in/{{ site.linkedin }}/"
+  ]
+}
+</script>
+{% endif %}
+
+{% if page.url == "/blog/" %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": {{ page.title | jsonify }},
+  "url": {{ page.url | absolute_url | jsonify }},
+  "description": {{ page.description | default: site.description | jsonify }},
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": {{ site.name | jsonify }},
+    "url": {{ site.url | jsonify }}
+  }
+}
+</script>
+{% endif %}
+
+{% if page.url == "/study/" or page.url == "/projects/" %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": {{ page.title | jsonify }},
+  "url": {{ page.url | absolute_url | jsonify }},
+  "description": {{ page.description | default: site.description | jsonify }}
+}
+</script>
+{% endif %}

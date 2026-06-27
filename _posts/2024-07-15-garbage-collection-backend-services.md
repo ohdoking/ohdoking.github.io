@@ -14,6 +14,7 @@ study_category: "Programming"
 origin: notion
 import_batch: notion-batch-2
 source_note: "Programming/Garbage collection"
+description: "Garbage collection is a runtime feature, but it becomes an application concern when latency, allocation rate, and memory pressure affect user-facing behavior."
 ---
 
 > Refined from a private Notion study note. This public version keeps the reusable technical ideas and removes private scratch content, event logistics, and copied reference material.

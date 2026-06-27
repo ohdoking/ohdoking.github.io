@@ -14,6 +14,7 @@ study_category: "Programming"
 origin: notion
 import_batch: notion-batch-2
 source_note: "Programming/AWS IAM and Authorization Patterns"
+description: "IAM is a design surface for cloud systems. Good policies encode least privilege, clear ownership, and safe operational workflows."
 ---
 
 > Refined from a private Notion study note. This public version keeps the reusable technical ideas and removes private scratch content, event logistics, and copied reference material.

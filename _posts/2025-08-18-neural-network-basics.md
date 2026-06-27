@@ -12,6 +12,7 @@ study_category: "AI"
 origin: notion
 import_batch: notion-batch-2
 source_note: "AI/인공신경망"
+description: "This note revisits the basic building blocks of neural networks: parameters, activations, layers, loss functions, and optimization."
 ---
 
 > Refined from a private Notion study note. This public version keeps the reusable technical ideas and removes private scratch content, event logistics, and copied reference material.

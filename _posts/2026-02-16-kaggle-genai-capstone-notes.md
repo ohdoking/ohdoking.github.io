@@ -14,6 +14,7 @@ study_category: "Project"
 origin: notion
 import_batch: notion-batch-2
 source_note: "Project/Kaggle Capstone Project"
+description: "The Kaggle capstone note is useful as a checklist for building a Gen AI project that demonstrates multiple capabilities instead of a single prompt."
 ---
 
 > Refined from a private Notion study note. This public version keeps the reusable technical ideas and removes private scratch content, event logistics, and copied reference material.

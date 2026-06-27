@@ -13,6 +13,7 @@ study_category: "AI"
 origin: notion
 import_batch: notion-batch-2
 source_note: "AI/Variational Autoencoder"
+description: "A variational autoencoder turns the autoencoder idea into a probabilistic generative model by learning a distribution over latent variables."
 ---
 
 > Refined from a private Notion study note. This public version keeps the reusable technical ideas and removes private scratch content, event logistics, and copied reference material.

@@ -14,6 +14,7 @@ study_category: "Programming"
 origin: notion
 import_batch: notion-batch-2
 source_note: "Programming/Java Servlet and spring"
+description: "This note revisits the servlet model that still shapes a lot of Spring MVC applications. Understanding the request lifecycle makes filters, interceptors, controllers,..."
 ---
 
 > Refined from a private Notion study note. This public version keeps the reusable technical ideas and removes private scratch content, event logistics, and copied reference material.

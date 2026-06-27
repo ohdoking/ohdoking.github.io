@@ -14,6 +14,7 @@ study_category: "AI"
 origin: notion
 import_batch: notion-batch-2
 source_note: "AI/Seq2seq+Attention"
+description: "Seq2Seq models helped frame tasks like translation as encoder-decoder learning. Attention improved the model by allowing the decoder to focus on relevant encoder states."
 ---
 
 > Refined from a private Notion study note. This public version keeps the reusable technical ideas and removes private scratch content, event logistics, and copied reference material.

@@ -14,6 +14,7 @@ study_category: "Programming"
 origin: notion
 import_batch: notion-batch-2
 source_note: "Programming/PostgreSQL Redundancy"
+description: "Redundancy in PostgreSQL is about recovery objectives, replication behavior, failover process, backups, and operational testing."
 ---
 
 > Refined from a private Notion study note. This public version keeps the reusable technical ideas and removes private scratch content, event logistics, and copied reference material.

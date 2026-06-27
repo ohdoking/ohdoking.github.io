@@ -13,6 +13,7 @@ study_category: "Programming"
 origin: notion
 import_batch: notion-batch-2
 source_note: "Programming/HTTP"
+description: "HTTP is not just transport. Methods, status codes, headers, caching, content negotiation, and idempotency all communicate service behavior."
 ---
 
 > Refined from a private Notion study note. This public version keeps the reusable technical ideas and removes private scratch content, event logistics, and copied reference material.
