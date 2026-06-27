@@ -1,9 +1,9 @@
 # main text of home
-name: Dokeun OH
-bio: A Man who like develop and travel with a enthusiastic soul
+name: Dokeun Oh
+bio: Backend engineer building cloud-native, event-driven, and AI-powered systems.
 
 # twitter summary info
-description: I've worked as Java Backend developer for 3 and half years in Korea.
+description: Backend engineer with 10+ years of experience across fintech, energy, mobility, cloud-native systems, and AI-driven applications.
 
 # if it's an external image, update below for true
 # better with square images
@@ -14,7 +14,7 @@ picture: assets/images/profile2.jpg
 # and specify source (external or local).
 resume: true
 resume-external: false
-resume-url: assets/resume/dokeun-oh-resume.pdf
+resume-url: assets/resume/resume_dokeun.pdf
 
 url: https://ohdoking.github.io
 # your url: http://USERNAME.github.io

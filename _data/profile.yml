@@ -1,12 +1,16 @@
 name: Dokeun Oh
-headline: Java full-stack developer
+headline: Backend Engineer
 summary:
-  - "I am a Java full-stack developer with experience across backend services, web applications, cloud platforms, and developer tooling."
-  - "My work has included Spring-based backend development, full-stack web service development, Cloud Foundry platform analysis, SQL query design, legacy code refactoring, Android application development, and student mentoring."
+  - "Backend engineer with 10+ years of experience building production systems across fintech, energy, and mobility."
+  - "Specialized in cloud-native architecture, microservices, event-driven systems, and backend platforms on AWS and Azure."
+  - "Actively builds and ships AI-driven applications, including multi-agent systems and LLM-powered products, with 6+ hackathon wins."
+  - "Studies ML fundamentals hands-on, including Transformers, VAE, and Seq2Seq, to understand the underlying systems deeply."
 skills:
   - group: Languages
     items:
       - Java
+      - Kotlin
+      - Python
       - JavaScript
       - SQL
       - HTML
@@ -15,33 +19,51 @@ skills:
     items:
       - Spring
       - Spring Boot
+      - Spring Core
+      - FastAPI
       - Hibernate
-      - JUnit
-      - Node.js
+      - REST APIs
+      - GraphQL
   - group: Frontend
     items:
+      - React
       - AngularJS
-      - Backbone.js
       - Sass
-      - Bootstrap
-      - Webpack
   - group: Data
     items:
+      - Postgres
       - MySQL
-      - Oracle
       - MongoDB
-      - Firebase
+      - Redis
   - group: Cloud and DevOps
     items:
       - AWS
-      - Google Cloud Platform
-      - Docker
+      - Azure
+      - Kubernetes
+      - Terraform
       - Git
-      - Continuous Integration
+      - Docker
+      - GitHub Actions
+      - GitLab CI/CD
+  - group: Messaging
+    items:
+      - Kafka
+      - RabbitMQ
+      - SQS
+  - group: AI and LLM
+    items:
+      - Multi-agent systems
+      - LangChain
+      - LangGraph
+      - RAG
+      - Knowledge graphs
+      - OpenAI
+      - Gemini
+      - Ollama
+      - Chrome Built-in AI
   - group: Practices
     items:
-      - Object-oriented programming
-      - Test-driven development
-      - Self-test automation
-      - Agile
-      - Kanban
+      - Cloud-native architecture
+      - Microservices
+      - Event-driven systems
+      - Infrastructure as Code

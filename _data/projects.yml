@@ -1,28 +1,72 @@
-- name: Useful Tools for me
-  url: https://github.com/ohdoking/useful-tool-microservices-proeject
-  source: github
-  summary: "A collection of useful personal tools."
-- name: Dansoon
-  url: https://github.com/ohdoking/Dansoon
-  source: github
-  summary: "A personal project named after the Korean word for simple."
-- name: Kind Picky Eating
-  url: https://github.com/ohdoking/KindPickyEatingServer
-  source: github
-  summary: "Server-side project for Kind Picky Eating."
-- name: PinMinder
-  url: https://github.com/jiniC/UnitonPinminder
-  source: github
-  summary: "A hackathon/team project."
-- name: FallHurt Prevention
-  url: https://github.com/ohdoking/FallHurtPreventionApp
-  source: github
-  summary: "Application project focused on fall injury prevention."
-- name: PIC
-  url: https://github.com/ohdoking/pic6inyapp
-  source: github
-  summary: "YAPP project."
-- name: All in one membership card
-  url: https://github.com/ohdoking/FloatingApp
-  source: github
-  summary: "Application for membership card management."
+- name: InfraPal
+  source: Serverless Salad
+  type: AI infrastructure product
+  summary: "Multi-agent AI system for cloud optimization and Infrastructure as Code automation."
+  stack:
+    - Python
+    - FastAPI
+    - React
+    - AWS
+    - Kubernetes
+    - OpenAI
+    - Terraform
+- name: Smoothy
+  source: Big Berlin Hack 2026
+  type: Hackathon project
+  summary: "Dual-brain AI voice companion for elderly users, combining instant conversation with health monitoring."
+  recognition: "1st place overall, telli and ai-coustics Voice AI Track winner, Gradium Side Challenge winner"
+  stack:
+    - AI voice
+    - Multi-agent systems
+    - Health monitoring
+- name: STAR-UP
+  source: BAD1 Hackathon
+  type: Hackathon project
+  summary: "AI platform connecting researchers, founders, and investors."
+  recognition: "1st place overall and Track 1 winner; invited to present to the Mayor of Berlin at BAD1 Conference"
+  stack:
+    - AI
+    - Platform engineering
+- name: AI Safety Chrome Extension
+  source: SAP and KPMG AI Cybersecurity Hackathon 2025
+  type: Hackathon project
+  summary: "Local AI Chrome extension designed to protect kids from toxic AI content."
+  recognition: "1st place overall"
+  stack:
+    - Chrome Built-in AI
+    - Local AI
+    - Browser extension
+- name: Misstery
+  source: Agentic FinAI Hackathon 2026
+  type: Solo hackathon project
+  summary: "Transcript analysis tool that detects cognitive gaps using cognee and Dify."
+  recognition: "Dify Track Prize"
+  stack:
+    - Dify
+    - cognee
+    - Agentic AI
+- name: Iomoto Service
+  source: ZF car eWallet
+  type: Production backend platform
+  summary: "Microservice platform for mobility services."
+  stack:
+    - Java 11
+    - Spring Boot
+    - Quarkus
+    - Postgres
+    - MongoDB
+    - RabbitMQ
+    - Azure
+    - Kubernetes
+    - Terraform
+- name: Aristoteles 2.0
+  source: Ampero GmbH
+  type: Production backend platform
+  summary: "Renewable energy portfolio service with optimized data ingestion connector pipelines."
+  stack:
+    - Kotlin
+    - Spring Boot
+    - Hibernate
+    - SAP HANA
+    - AWS
+    - Kubernetes

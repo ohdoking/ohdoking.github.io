@@ -13,4 +13,4 @@ bundle install --path vendor/bundle
 bundle exec jekyll serve --config _config.yml,_config-dev.yml
 ```
 
-Before publishing, place the resume PDF at `assets/resume/dokeun-oh-resume.pdf` or disable the resume link in `_config.yml`.
+Before publishing, place the resume PDF at `assets/resume/resume_dokeun.pdf` or disable the resume link in `_config.yml`.

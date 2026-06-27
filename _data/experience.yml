@@ -1,20 +1,124 @@
+- organization: FREENOW
+  role: Backend Engineer
+  location: Berlin, Germany
+  period: "Dec 2025 - Present"
+  projects:
+    - name: AI Chatbot for CS Team
+      period: "Dec 2025 - Present"
+      stack:
+        - Kotlin
+        - Spring Boot
+        - Spring AI
+        - Redis
+        - Postgres
+        - pgvector
+        - Kafka
+        - AWS
+        - Kubernetes
+        - GitLab CI/CD
+        - Gemini
+        - Terraform
+        - Zendesk
+      highlights:
+        - "Develops and maintains a multi-agent AI chatbot for customer service automation."
+        - "Improves core backend performance, proactive monitoring, and infrastructure reliability."
+        - "Builds internal services and tools that improve productivity for internal stakeholders."
+- organization: Serverless Salad
+  role: CTO
+  location: Berlin, Germany
+  period: "Sep 2024 - Oct 2025"
+  projects:
+    - name: InfraPal
+      period: "Sep 2024 - Present"
+      stack:
+        - Python
+        - FastAPI
+        - JavaScript
+        - React
+        - AWS
+        - Kubernetes
+        - GitHub Actions
+        - OpenAI
+        - Terraform
+      highlights:
+        - "Architected a scalable FastAPI backend deployed on AWS services including ECS, Lambda, S3, SQS, and EKS."
+        - "Built a multi-agent AI system for cloud optimization and Infrastructure as Code automation."
+        - "Secured architectures with IAM, Secrets Manager, and Keycloak while improving cost and reliability."
+- organization: Ampero GmbH
+  role: Software Engineer, Backend Developer
+  location: Berlin, Germany
+  period: "Apr 2023 - Sep 2024"
+  projects:
+    - name: Aristoteles 2.0
+      period: "Apr 2023 - Sep 2024"
+      stack:
+        - Kotlin
+        - Spring Boot
+        - Hibernate
+        - SAP HANA
+        - AWS
+        - Kubernetes
+        - GitHub Actions
+      highlights:
+        - "Implemented version 2 of a renewable energy portfolio service."
+        - "Optimized data ingestion connector pipelines."
+- organization: Delivery Hero
+  role: Software Engineer II, Backend Developer
+  location: Berlin, Germany
+  period: "Jul 2022 - Feb 2023"
+  projects:
+    - name: AMI Service
+      period: "Aug 2022 - Feb 2023"
+      stack:
+        - Java 11
+        - Go
+        - Spring Boot
+        - Hibernate
+        - Postgres
+        - Redis
+        - BigQuery
+        - Kafka
+        - AWS
+        - Kubernetes
+        - Terraform
+        - GitHub Actions
+      highlights:
+        - "Implemented new features and maintained services for the Account Management Interface."
+- organization: ZF car eWallet
+  role: Backend Developer
+  location: Berlin, Germany
+  period: "Mar 2019 - Jun 2022"
+  projects:
+    - name: Iomoto Service
+      period: "Apr 2019 - Jun 2022"
+      stack:
+        - Java 11
+        - Spring Boot
+        - Spring Core
+        - Hibernate
+        - Quarkus
+        - Postgres
+        - MongoDB
+        - RabbitMQ
+        - Azure
+        - Kubernetes
+        - Terraform
+        - GitLab CI/CD
+      highlights:
+        - "Implemented new features and maintained microservices for the Iomoto service."
+- organization: NiceDNB
+  role: Backend Developer
+  location: Seoul, South Korea
+  period: "Apr 2017 - May 2018"
+  highlights:
+    - "Developed backend applications."
+    - "Designed SQL queries and maintained backend systems."
+    - "Refactored legacy code."
 - organization: SoftwareInLife
-  role: Full-stack Developer
-  period: "2 years 6 months"
+  role: Junior Full-stack Developer
+  location: Seoul, South Korea
+  period: "Apr 2014 - Apr 2017"
   highlights:
     - "Developed full-stack web services."
     - "Analyzed Cloud Foundry, an open-source PaaS."
-    - "Built experience in application structure and web service development practices."
-- organization: NiceDNB
-  role: Backend Developer
-  period: "1 year"
-  highlights:
-    - "Developed backend applications."
-    - "Designed and optimized SQL queries."
-    - "Refactored legacy code."
-- organization: YAPP
-  role: Android Developer and Mentor
-  period: "2 years"
-  highlights:
-    - "Developed Android applications."
-    - "Tutored university students in an IT club."
+    - "Built experience in application architecture and web service development practices."

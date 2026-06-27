@@ -1,0 +1,18 @@
+- title: "1st Place Overall and Track Winner"
+  event: Big Berlin Hack 2026
+  description: "Built Smoothy, a dual-brain AI voice companion for elderly users."
+- title: "1st Place Overall and Track 1 Winner"
+  event: BAD1 Hackathon
+  description: "Built STAR-UP, an AI platform connecting researchers, founders, and investors."
+- title: "1st Place Overall"
+  event: AI Cybersecurity Hackathon, SAP and KPMG, 2025
+  description: "Built a local AI Chrome extension that protects kids from toxic AI content."
+- title: "Dify Track Prize"
+  event: Agentic FinAI Hackathon 2026
+  description: "Built Misstery, a solo project for detecting cognitive gaps in transcripts."
+- title: "AWS All Builders Welcome Grant"
+  event: AWS re:Invent 2024
+  description: "Selected by AWS as a grant recipient to attend re:Invent in Las Vegas."
+- title: "Speaker"
+  event: Berlin AI/ML Meetup 2024
+  description: "Presented a hands-on session on running LLMs locally with Ollama."

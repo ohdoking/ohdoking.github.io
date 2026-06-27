@@ -21,7 +21,7 @@ LinkedIn is treated as a public profile link, not as an automated data source. U
 Place the public resume PDF at:
 
 ```text
-assets/resume/dokeun-oh-resume.pdf
+assets/resume/resume_dokeun.pdf
 ```
 
 The site config points the resume link to that local file.

@@ -5,13 +5,27 @@ title: Projects
 <section class="list">
     {% for project in site.data.projects %}
         <div class="item">
+            {% if project.url %}
             <a class="url" href="{{ project.url }}">
-                <aside>{{ project.source | default: "project" }}</aside>
+            {% else %}
+            <div class="url">
+            {% endif %}
+                <aside>{{ project.source | default: project.type | default: "project" }}</aside>
                 <h3 class="title">{{ project.name }}</h3>
                 {% if project.summary %}
                     <p class="description">{{ project.summary }}</p>
                 {% endif %}
+                {% if project.recognition %}
+                    <p class="description"><strong>{{ project.recognition }}</strong></p>
+                {% endif %}
+                {% if project.stack %}
+                    <p class="description">{{ project.stack | join: ", " }}</p>
+                {% endif %}
+            {% if project.url %}
             </a>
+            {% else %}
+            </div>
+            {% endif %}
         </div>
     {% endfor %}
 </section>
