@@ -10,3 +10,177 @@
         width: 50%
         margin: 0 auto
         display: block
+
+    .profile-tabs
+        margin: 40px 0
+
+        &__input
+            position: absolute
+            opacity: 0
+            pointer-events: none
+
+        &__nav
+            display: grid
+            grid-template-columns: repeat(2, minmax(0, 1fr))
+            gap: 4px
+            padding: 4px
+            margin-bottom: 30px
+            border: 1px solid $epsilon
+            border-radius: 8px
+            background: #f8f8f8
+
+        &__tab
+            display: block
+            min-height: 42px
+            line-height: 42px
+            text-align: center
+            color: $alpha
+            font-size: 1.4rem
+            font-weight: 500
+            border-radius: 6px
+            cursor: pointer
+            transition: background 0.18s ease, color 0.18s ease, box-shadow 0.18s ease
+
+            &:hover
+                color: $beta
+
+        &__panel
+            display: none
+
+    #profile-tab-experience:checked ~ .profile-tabs__nav .profile-tabs__tab--experience,
+    #profile-tab-skills:checked ~ .profile-tabs__nav .profile-tabs__tab--skills
+        color: $beta
+        background: #fff
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08)
+
+    #profile-tab-experience:focus-visible ~ .profile-tabs__nav .profile-tabs__tab--experience,
+    #profile-tab-skills:focus-visible ~ .profile-tabs__nav .profile-tabs__tab--skills
+        outline: 2px solid $delta
+        outline-offset: 2px
+
+    #profile-tab-experience:checked ~ .profile-tabs__panels .profile-tabs__panel--experience,
+    #profile-tab-skills:checked ~ .profile-tabs__panels .profile-tabs__panel--skills
+        display: block
+
+    .experience-item
+        position: relative
+        padding: 0 0 28px 22px
+        border-left: 2px solid $epsilon
+
+        &:last-child
+            padding-bottom: 0
+
+        &:before
+            content: ""
+            position: absolute
+            top: 5px
+            left: -6px
+            width: 10px
+            height: 10px
+            border-radius: 50%
+            background: $delta
+
+        &__header
+            margin-bottom: 14px
+
+            h2
+                margin: 0 0 4px
+                font-size: 2rem
+                line-height: 1.3
+
+        &__organization,
+        &__meta
+            margin: 0
+            line-height: 1.5
+
+        &__organization
+            color: $beta
+            font-weight: 500
+
+        &__meta
+            color: $gama
+            font-size: 1.4rem
+
+    .experience-project
+        margin-bottom: 18px
+
+        &:last-child
+            margin-bottom: 0
+
+        h3
+            margin: 0 0 8px
+            font-size: 1.7rem
+            line-height: 1.4
+
+            span
+                display: block
+                margin-top: 2px
+                color: $gama
+                font-size: 1.3rem
+                font-weight: 400
+
+        ul
+            margin-top: 0
+            margin-bottom: 10px
+            padding-left: 20px
+
+        li
+            margin-bottom: 4px
+
+    .experience-stack
+        margin: 0
+        color: $gama
+        font-size: 1.35rem
+        line-height: 1.6
+
+    .skills-grid
+        display: grid
+        gap: 24px
+
+    .skill-group
+        padding-bottom: 20px
+        border-bottom: 1px solid $epsilon
+
+        &:last-child
+            padding-bottom: 0
+            border-bottom: 0
+
+        h2
+            margin: 0 0 12px
+            font-size: 1.8rem
+
+    .skill-list
+        display: flex
+        flex-wrap: wrap
+        gap: 8px
+        padding: 0
+        margin: 0
+        list-style: none
+
+        li
+            display: inline-flex
+            align-items: center
+            min-height: 30px
+            padding: 0 10px
+            color: $beta
+            line-height: 1.2
+            background: #f4f4f4
+            border: 1px solid $epsilon
+            border-radius: 6px
+
+    @media #{$mobile}
+        img
+            width: 72%
+
+        .profile-tabs
+            margin-top: 32px
+
+            &__tab
+                min-height: 38px
+                line-height: 38px
+
+        .experience-item
+            padding-left: 18px
+
+            &__header h2
+                font-size: 1.8rem

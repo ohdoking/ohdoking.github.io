@@ -14,44 +14,70 @@ layout: page
 <p>{{ paragraph }}</p>
 {% endfor %}
 
-<h2>Skills</h2>
+<section class="profile-tabs" aria-label="Experience and skills">
+	<input class="profile-tabs__input" type="radio" name="profile-tabs" id="profile-tab-experience" checked>
+	<input class="profile-tabs__input" type="radio" name="profile-tabs" id="profile-tab-skills">
 
-{% for skill_group in profile.skills %}
-<h3>{{ skill_group.group }}</h3>
-<ul class="skill-list">
-	{% for skill in skill_group.items %}
-	<li>{{ skill }}</li>
-	{% endfor %}
-</ul>
-{% endfor %}
+	<div class="profile-tabs__nav" role="tablist" aria-label="Profile sections">
+		<label class="profile-tabs__tab profile-tabs__tab--experience" id="profile-tab-experience-label" for="profile-tab-experience" role="tab">Experience</label>
+		<label class="profile-tabs__tab profile-tabs__tab--skills" id="profile-tab-skills-label" for="profile-tab-skills" role="tab">Skills</label>
+	</div>
 
-<h2>Experience</h2>
+	<div class="profile-tabs__panels">
+		<section class="profile-tabs__panel profile-tabs__panel--experience" role="tabpanel" aria-labelledby="profile-tab-experience-label">
+			{% for experience in site.data.experience %}
+			<article class="experience-item">
+				<header class="experience-item__header">
+					<h2>{{ experience.role }}</h2>
+					{% if experience.organization %}
+					<p class="experience-item__organization">{{ experience.organization }}</p>
+					{% endif %}
+					{% if experience.period %}
+					<p class="experience-item__meta">{{ experience.period }}{% if experience.location %} - {{ experience.location }}{% endif %}</p>
+					{% endif %}
+				</header>
 
-{% for experience in site.data.experience %}
-<h3>{{ experience.role }}{% if experience.organization %} - {{ experience.organization }}{% endif %}</h3>
-{% if experience.period %}
-<p>{{ experience.period }}{% if experience.location %} - {{ experience.location }}{% endif %}</p>
-{% endif %}
-{% if experience.projects %}
-{% for project in experience.projects %}
-<h4>{{ project.name }}{% if project.period %} ({{ project.period }}){% endif %}</h4>
-<ul>
-	{% for highlight in project.highlights %}
-	<li>{{ highlight }}</li>
-	{% endfor %}
-</ul>
-{% if project.stack %}
-<p><strong>Stack:</strong> {{ project.stack | join: ", " }}</p>
-{% endif %}
-{% endfor %}
-{% elsif experience.highlights %}
-<ul>
-	{% for highlight in experience.highlights %}
-	<li>{{ highlight }}</li>
-	{% endfor %}
-</ul>
-{% endif %}
-{% endfor %}
+				{% if experience.projects %}
+				{% for project in experience.projects %}
+				<div class="experience-project">
+					<h3>{{ project.name }}{% if project.period %} <span>{{ project.period }}</span>{% endif %}</h3>
+					<ul>
+						{% for highlight in project.highlights %}
+						<li>{{ highlight }}</li>
+						{% endfor %}
+					</ul>
+					{% if project.stack %}
+					<p class="experience-stack"><strong>Stack:</strong> {{ project.stack | join: ", " }}</p>
+					{% endif %}
+				</div>
+				{% endfor %}
+				{% elsif experience.highlights %}
+				<ul>
+					{% for highlight in experience.highlights %}
+					<li>{{ highlight }}</li>
+					{% endfor %}
+				</ul>
+				{% endif %}
+			</article>
+			{% endfor %}
+		</section>
+
+		<section class="profile-tabs__panel profile-tabs__panel--skills" role="tabpanel" aria-labelledby="profile-tab-skills-label">
+			<div class="skills-grid">
+				{% for skill_group in profile.skills %}
+				<section class="skill-group">
+					<h2>{{ skill_group.group }}</h2>
+					<ul class="skill-list">
+						{% for skill in skill_group.items %}
+						<li>{{ skill }}</li>
+						{% endfor %}
+					</ul>
+				</section>
+				{% endfor %}
+			</div>
+		</section>
+	</div>
+</section>
 
 <h2>Selected Projects</h2>
 
