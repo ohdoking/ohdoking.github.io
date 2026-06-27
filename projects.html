@@ -7,6 +7,9 @@ description: Portfolio projects spanning production backend platforms, hackathon
     <p>
         This page is the portfolio side of the site: production backend work, hackathon builds, and AI product prototypes collected in one place with clearer context than the blog index.
     </p>
+    <p>
+        The featured entries below include dedicated case studies so the project list can lead into fuller architecture and delivery context.
+    </p>
 </section>
 
 <section class="portfolio-project-grid portfolio-project-grid--full">
@@ -38,8 +41,11 @@ description: Portfolio projects spanning production backend platforms, hackathon
             {% endfor %}
         </div>
         {% endif %}
-        {% if project.links or project.url %}
+        {% if project.case_study_url or project.links or project.url %}
         <div class="portfolio-link-row">
+            {% if project.case_study_url %}
+            <a href="{{ site.url }}{{ project.case_study_url }}">Read case study</a>
+            {% endif %}
             {% if project.url %}
             <a href="{{ project.url }}">Open project</a>
             {% endif %}

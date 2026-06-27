@@ -1,6 +1,7 @@
 - name: InfraPal
   slug: infrapal
   featured: true
+  case_study_url: /projects/infrapal/
   source: Serverless Salad
   type: AI infrastructure product
   role: CTO and backend architect
@@ -20,6 +21,7 @@
 - name: Smoothy
   slug: smoothy
   featured: true
+  case_study_url: /projects/smoothy/
   source: Big Berlin Hack 2026
   type: Hackathon project
   role: Builder and backend/AI contributor
@@ -83,6 +85,7 @@
 - name: Iomoto Service
   slug: iomoto-service
   featured: true
+  case_study_url: /projects/iomoto-service/
   source: ZF car eWallet
   type: Production backend platform
   role: Backend developer

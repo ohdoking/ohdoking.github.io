@@ -47,3 +47,8 @@ For backend engineering, I treat this topic as a design decision rather than an 
 
 - What would I measure to know this idea works in production?
 - Where should this concept live in a real backend or AI system design?
+
+## Related Reading
+
+- [AWS IAM and Authorization Patterns]({{ site.url }}/aws-iam-authorization-patterns/)
+- [AWS Control Tower and Landing Zone Notes]({{ site.url }}/aws-control-tower-landing-zone/)

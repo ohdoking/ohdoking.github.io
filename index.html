@@ -5,6 +5,8 @@ description: Backend engineer portfolio and blog focused on cloud-native systems
 ---
 {% assign featured_projects = site.data.projects | where: "featured", true %}
 {% assign recent_posts = site.posts | where: "category", "blog" | slice: 0, 6 %}
+{% assign current_role = site.data.experience | first %}
+{% assign current_project = current_role.projects | first %}
 
 <section class="home-portfolio">
   <div class="home-portfolio__intro">
@@ -29,6 +31,32 @@ description: Backend engineer portfolio and blog focused on cloud-native systems
       <span>Refined study posts on backend, cloud, security, and AI systems.</span>
     </div>
   </div>
+</section>
+
+<section class="home-section">
+  <div class="home-section__header">
+    <h2>Current Work</h2>
+    <p>What I am actively building now, beyond the static resume summary.</p>
+  </div>
+
+  <article class="current-work-card">
+    <div class="portfolio-project-card__meta">
+      <span>{{ current_role.organization }}</span>
+      <span>{{ current_role.period }}</span>
+    </div>
+    <h3>{{ current_project.name }}</h3>
+    <p class="portfolio-project-card__role">{{ current_role.role }}</p>
+    <ul class="portfolio-project-card__highlights">
+      {% for highlight in current_project.highlights %}
+      <li>{{ highlight }}</li>
+      {% endfor %}
+    </ul>
+    <div class="portfolio-chip-list">
+      {% for item in current_project.stack %}
+      <span>{{ item }}</span>
+      {% endfor %}
+    </div>
+  </article>
 </section>
 
 <section class="home-section">
@@ -66,8 +94,11 @@ description: Backend engineer portfolio and blog focused on cloud-native systems
         {% endfor %}
       </div>
       {% endif %}
-      {% if project.links or project.url %}
+      {% if project.case_study_url or project.links or project.url %}
       <div class="portfolio-link-row">
+        {% if project.case_study_url %}
+        <a href="{{ site.url }}{{ project.case_study_url }}">Read case study</a>
+        {% endif %}
         {% if project.url %}
         <a href="{{ project.url }}">Open project</a>
         {% endif %}

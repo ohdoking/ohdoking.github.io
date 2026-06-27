@@ -232,3 +232,8 @@ GraphQL is best understood as an API contract and query layer between clients an
 
 - [GraphQL official documentation: Queries and Mutations](https://graphql.org/learn/queries/)
 - [GraphQL official documentation: Schemas and Types](https://graphql.org/learn/schema/)
+
+## Related Reading
+
+- [HTTP as a Backend Contract]({{ site.url }}/http-backend-contracts/)
+- [gRPC Service Boundaries]({{ site.url }}/grpc-service-boundaries/)

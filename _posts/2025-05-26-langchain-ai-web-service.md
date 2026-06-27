@@ -47,3 +47,9 @@ For backend engineering, I treat this topic as a design decision rather than an 
 
 - What would I measure to know this idea works in production?
 - Where should this concept live in a real backend or AI system design?
+
+## Related Reading
+
+- [RAG as Backend Architecture]({{ site.url }}/rag-backend-architecture/)
+- [Vector Database Notes]({{ site.url }}/vector-database-notes/)
+- [MS AI Agents Hackathon Notes]({{ site.url }}/ms-ai-agents-hackathon-notes/)
