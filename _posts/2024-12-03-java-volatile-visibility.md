@@ -22,12 +22,13 @@ description: A concise guide to what Java volatile guarantees, what it does not 
 The short version:
 
 - `volatile` guarantees visibility.
-- `volatile` prevents certain instruction reorderings.
+- `volatile` creates a happens-before relationship between a write and later reads of the same field.
+- `volatile` restricts certain instruction reorderings around that field.
 - `volatile` does not make compound operations atomic.
 
 ## The Visibility Problem
 
-In a multi-threaded application, each thread may read and write variables through CPU caches. Without coordination, one thread can update a value while another thread keeps reading an old cached value.
+In a multi-threaded application, each thread may read and write variables through registers, CPU caches, and compiler/JIT optimizations. Without coordination, one thread can update a value while another thread keeps observing an old value.
 
 ```java
 class Worker {
@@ -47,7 +48,7 @@ class Worker {
 
 The intention is clear: another thread calls `stop()`, then the worker loop exits.
 
-The problem is that `running` is not guaranteed to be read from main memory every time. The worker thread may not observe the latest value.
+The problem is that `running` is not synchronized. The Java Memory Model does not guarantee that the worker thread will observe the latest value.
 
 ## What volatile Guarantees
 
@@ -67,9 +68,17 @@ class Worker {
 }
 ```
 
-With `volatile`, writes to `running` become visible to other threads that read it. When one thread writes `false`, the worker thread is guaranteed to observe that updated value.
+With `volatile`, writes to `running` become visible to other threads that read it. More precisely, a write to a volatile field happens-before every subsequent read of that same field.
 
 This makes `volatile` a good fit for simple state flags.
+
+## Visibility vs Atomicity
+
+Visibility means other threads can observe the latest value.
+
+Atomicity means an operation happens as one indivisible step.
+
+`volatile` helps with visibility, but it does not turn a sequence of operations into one atomic operation.
 
 ## What volatile Does Not Guarantee
 
@@ -107,13 +116,15 @@ class Counter {
 }
 ```
 
+One detail worth knowing: volatile reads and writes of `long` and `double` are atomic. But that still does not make compound logic such as increment, compare-then-set, or check-then-act atomic.
+
 ## When volatile Is Appropriate
 
 Use `volatile` when:
 
 - One thread writes a value and other threads read it.
 - The value is independent and does not depend on its previous value.
-- You need a simple lifecycle flag, readiness flag, or configuration snapshot reference.
+- You need a simple lifecycle flag, readiness flag, or immutable configuration snapshot reference.
 
 Common examples:
 
@@ -141,6 +152,17 @@ class ConfigHolder {
 
 Readers always see the latest config reference, and the config object itself can remain immutable.
 
+## When volatile Is Not Enough
+
+Do not rely on `volatile` when:
+
+- multiple fields must stay consistent together
+- updates depend on the previous value
+- a thread must perform check-then-act logic
+- only one thread may enter a critical section
+
+Those cases need `synchronized`, `Lock`, atomic classes, or higher-level concurrency utilities.
+
 ## Performance Considerations
 
 Volatile reads and writes can be more expensive than ordinary field access because they require memory visibility guarantees. They can also restrict JVM and CPU optimizations around instruction reordering.
@@ -152,3 +174,8 @@ That does not mean `volatile` is slow in every case. It means it should be used 
 `volatile` is a visibility tool, not a mutual exclusion tool.
 
 Use it for simple flags and safely published references. Do not use it for counters, check-then-act logic, or multi-field invariants. When an operation must be atomic, use `synchronized`, locks, or atomic classes from `java.util.concurrent`.
+
+## References
+
+- [Java Language Specification, Chapter 17: Threads and Locks](https://docs.oracle.com/javase/specs/jls/se21/html/jls-17.html)
+- [AtomicInteger API documentation](https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/concurrent/atomic/AtomicInteger.html)
