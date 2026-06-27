@@ -9,6 +9,7 @@ tags:
   - ai
   - hackathon
   - aws
+blog_category: "projects-hackathons"
 study_category: "Project"
 origin: notion
 import_batch: notion-batch-2

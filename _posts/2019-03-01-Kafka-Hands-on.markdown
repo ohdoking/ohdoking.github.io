@@ -10,6 +10,7 @@ tag:
 - ZooKeeper
 star: true
 category: blog
+blog_category: data-messaging
 author: Dokeun Oh
 description: Kafka Hands-on with Docker
 ---
@@ -217,4 +218,3 @@ So, now you have a Kafka cluster on your workstation and can try writing produce
 ## Reference 
 - https://medium.com/@saabeilin/kafka-hands-on-part-i-development-environment-fc1b70955152
 - https://kafka.apache.org/quickstart
-

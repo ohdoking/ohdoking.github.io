@@ -7,6 +7,7 @@ tags:
   - study
   - programming
   - database
+blog_category: "data-messaging"
 study_category: "Programming"
 origin: notion
 import_batch: notion-batch-2

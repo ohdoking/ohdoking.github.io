@@ -8,6 +8,7 @@ tags:
   - programming
   - redis
   - cache
+blog_category: "data-messaging"
 study_category: "Programming"
 origin: notion
 import_batch: notion-batch-2

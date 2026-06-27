@@ -8,6 +8,7 @@ tags:
   - ai
   - lstm
   - sequence
+blog_category: "ai-llm"
 study_category: "AI"
 origin: notion
 import_batch: notion-batch-2

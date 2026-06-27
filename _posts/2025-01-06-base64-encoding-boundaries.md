@@ -8,6 +8,7 @@ tags:
   - programming
   - encoding
   - base64
+blog_category: "security-networking"
 study_category: "Programming"
 origin: notion
 import_batch: notion-batch-2

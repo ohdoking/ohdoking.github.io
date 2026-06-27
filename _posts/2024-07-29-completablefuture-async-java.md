@@ -9,6 +9,7 @@ tags:
   - java
   - async
   - concurrency
+blog_category: "java-spring"
 study_category: "Programming"
 origin: notion
 import_batch: notion-batch-2

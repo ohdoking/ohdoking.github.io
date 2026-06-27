@@ -1128,6 +1128,20 @@ def practical_reflection(post)
   end
 end
 
+def infer_blog_category(post)
+  tags = post[:tags].map(&:to_s)
+
+  return "projects-hackathons" if post[:study_category] == "Project"
+  return "ai-llm" if (tags & %w[ai rag langchain embeddings vector-database gan vae word2vec seq2seq attention nlp optimization sgd loss neural-network backpropagation cnn rnn lstm generative-ai representation computer-vision]).any?
+  return "cloud-devops" if (tags & %w[aws gcp cloud iam control-tower]).any?
+  return "security-networking" if (tags & %w[security tls certificate oauth mfa rsa sha256 hash checksum encoding base64 network socket tcp udp ethernet dns]).any?
+  return "data-messaging" if (tags & %w[database postgres mongodb redis cache]).any?
+  return "java-spring" if (tags & %w[java spring jvm gc jdbc jpa r2dbc servlet concurrency reactive webflux]).any?
+  return "backend-apis" if (tags & %w[http api grpc backend architecture]).any?
+
+  "backend-apis"
+end
+
 def render_post(post)
   tags = post[:tags].map { |tag| "  - #{tag}" }.join("\n")
   key_ideas = post[:key_ideas].map { |item| "- #{item}" }.join("\n")
@@ -1135,6 +1149,7 @@ def render_post(post)
   watch_outs = post[:watch_outs].map { |item| "- #{item}" }.join("\n")
   source_note = clean_source_note(post[:source_note])
   reflection = practical_reflection(post)
+  blog_category = infer_blog_category(post)
 
   <<~MARKDOWN
   ---
@@ -1144,6 +1159,7 @@ def render_post(post)
   category: blog
   tags:
   #{tags}
+  blog_category: "#{blog_category}"
   study_category: "#{yaml_string(post[:study_category])}"
   origin: notion
   import_batch: notion-batch-2

@@ -10,6 +10,7 @@ tag:
 - Garbage colleciton
 star: true
 category: blog
+blog_category: java-spring
 author: Dokeun Oh
 description: About Garbage Collection
 ---
@@ -48,6 +49,5 @@ This is where the garbage collector identifies which pieces of memory are in use
 
 ## Reference 
 - https://www.oracle.com/webfolder/technetwork/tutorials/obe/java/gc01/index.html
-
 
 

@@ -12,6 +12,7 @@ tag:
 - Docker
 star: true
 category: blog
+blog_category: data-messaging
 author: Dokeun Oh
 description: How to Work with Apache Kafka in Your Spring Boot Application and Docker
 ---

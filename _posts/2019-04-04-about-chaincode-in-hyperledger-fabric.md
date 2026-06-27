@@ -12,6 +12,7 @@ tag:
 - Chaincode
 star: true
 category: blog
+blog_category: blockchain
 author: Dokeun Oh
 description: About Chaincode in HyperLedger Fabric
 ---
@@ -97,6 +98,5 @@ SampleChaincode implements a simple chaincode to manage an asset.
 ## Reference 
 - https://medium.com/swlh/hyperledger-chapter-8-what-is-hyperledger-fabric-chaincode-a74778dff2ae
 - 
-
 
 

@@ -6,6 +6,7 @@ image: /assets/images/markdown.jpg
 headerImage: false
 star: true
 category: blog
+blog_category: backend-apis
 tags:
   - GraphQL
   - Backend

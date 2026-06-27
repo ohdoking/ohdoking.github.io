@@ -9,6 +9,7 @@ tag:
 - elements
 star: false
 category: blog
+blog_category: site-notes
 author: johndoe
 description: Markdown summary with different options
 ---

@@ -9,6 +9,7 @@ tag:
 - OAuth2.0
 star: true
 category: blog
+blog_category: security-networking
 author: Dokeun Oh
 description: About OAuth 1.0 and 2.0
 ---

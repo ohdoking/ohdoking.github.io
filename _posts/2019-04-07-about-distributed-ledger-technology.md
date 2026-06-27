@@ -10,6 +10,7 @@ tag:
 - Distributed Ledger Technology
 star: true
 category: blog
+blog_category: blockchain
 author: Dokeun Oh
 description: About HyperLedger Fabric
 ---
@@ -113,6 +114,5 @@ A permissioned blockchain, or private blockchain, requires pre-verification of t
 
 ## Reference 
 - https://medium.com/swlh/hyperledger-chapter-1-foundation-7ad5bd94d452
-
 
 

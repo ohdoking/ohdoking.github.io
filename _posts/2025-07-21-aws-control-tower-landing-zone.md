@@ -9,6 +9,7 @@ tags:
   - aws
   - control-tower
   - cloud
+blog_category: "cloud-devops"
 study_category: "Programming"
 origin: notion
 import_batch: notion-batch-2

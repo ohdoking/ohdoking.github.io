@@ -1,0 +1,27 @@
+- key: ai-llm
+  name: AI & LLM
+  description: "Applied AI, LLM architecture, RAG, embeddings, model fundamentals, and generative AI notes."
+- key: java-spring
+  name: Java & Spring
+  description: "Java, JVM, Spring, concurrency, servlet, persistence, and backend runtime notes."
+- key: backend-apis
+  name: Backend & APIs
+  description: "API design, service boundaries, HTTP, GraphQL, gRPC, and backend architecture."
+- key: data-messaging
+  name: Data & Messaging
+  description: "Databases, caching, Kafka, Redis, persistence, and data reliability topics."
+- key: cloud-devops
+  name: Cloud & DevOps
+  description: "AWS, GCP, IAM, cloud architecture, deployment, infrastructure, and operations."
+- key: security-networking
+  name: Security & Networking
+  description: "TLS, OAuth, DNS, TCP/IP, certificates, cryptography, and secure service design."
+- key: projects-hackathons
+  name: Projects & Hackathons
+  description: "Project writeups, hackathon reflections, demos, and public build notes."
+- key: blockchain
+  name: Blockchain
+  description: "Distributed ledger, Hyperledger Fabric, chaincode, Merkle trees, and blockchain concepts."
+- key: site-notes
+  name: Site Notes
+  description: "Markdown, site structure, and publishing notes."

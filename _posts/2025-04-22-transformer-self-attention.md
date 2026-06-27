@@ -6,6 +6,7 @@ image: /assets/images/markdown.jpg
 headerImage: false
 star: true
 category: blog
+blog_category: ai-llm
 tags:
   - AI
   - Transformer

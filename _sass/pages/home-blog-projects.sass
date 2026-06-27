@@ -25,7 +25,8 @@
 
 .home > .list,
 .blog > .list,
-.projects > .list
+.projects > .list,
+.blog-category-list
     > .item
         display: block
         width: 95%
@@ -50,6 +51,13 @@
         font-size: 1.4rem
         line-height: 1.5
 
+    > .item > .url > .post-meta
+        width: 75%
+        margin: 6px 0 0
+        color: $gama
+        font-size: 1.2rem
+        line-height: 1.4
+
     > .item:hover > .url > .title
         color: $delta
 
@@ -70,7 +78,8 @@
         color: $alpha
 
 .blog > .list > .item > .url,
-.projects > .list > .item > .url
+.projects > .list > .item > .url,
+.blog-category-list > .item > .url
     > .title
         display: inline
 
@@ -79,3 +88,51 @@
         position: relative
         top: -4px
         margin-right: 10px
+
+.blog-category-nav
+    display: flex
+    flex-wrap: wrap
+    gap: 8px
+    margin: 0 0 36px
+
+    a
+        display: inline-flex
+        align-items: center
+        gap: 6px
+        min-height: 32px
+        padding: 0 10px
+        color: $beta
+        font-size: 1.3rem
+        font-weight: 400
+        text-decoration: none
+        border: 1px solid $epsilon
+        border-radius: 6px
+        background: #fff
+
+        &:hover
+            color: $delta
+            border-color: $delta
+
+        span
+            color: $gama
+            font-size: 1.1rem
+
+.blog-category-section
+    margin: 0 0 52px
+    scroll-margin-top: 24px
+
+.blog-category-header
+    margin-bottom: 14px
+
+    h2
+        margin-bottom: 8px
+
+    p
+        margin: 0
+        color: $gama
+        font-size: 1.4rem
+        line-height: 1.6
+
+.blog-category-list
+    border-top: 1px solid $epsilon
+    padding-top: 12px

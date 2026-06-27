@@ -11,6 +11,7 @@ tag:
 - Fabric
 star: true
 category: blog
+blog_category: blockchain
 author: Dokeun Oh
 description: About HyperLedger Fabric
 ---
@@ -166,6 +167,5 @@ To summarize, the ordering service ensures the follwoing properties:
 ## Reference 
 - https://hyperledger-fabric.readthedocs.io/en/release-1.4/arch-deep-dive.html
 - https://arxiv.org/abs/1801.10228v2
-
 
 

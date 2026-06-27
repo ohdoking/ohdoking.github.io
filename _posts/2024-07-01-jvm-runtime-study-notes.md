@@ -8,6 +8,7 @@ tags:
   - programming
   - java
   - jvm
+blog_category: "java-spring"
 study_category: "Programming"
 origin: notion
 import_batch: notion-batch-2

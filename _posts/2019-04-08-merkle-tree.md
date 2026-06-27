@@ -12,6 +12,7 @@ tag:
 - SHA-256
 star: true
 category: blog
+blog_category: blockchain
 author: Dokeun Oh
 description: Merkle Tree
 ---
@@ -62,6 +63,5 @@ The method receives the information of black boxes (43bc, 143c, 89fe) from the f
 - https://medium.com/verifyas/merkle-trees-simple-yet-powerful-4c44dad19539
 - https://coincentral.com/merkle-tree-hashing-blockchain/
 - 
-
 
 

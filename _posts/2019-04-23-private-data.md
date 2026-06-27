@@ -11,6 +11,7 @@ tag:
 - Gassip
 star: true
 category: blog
+blog_category: blockchain
 author: Dokeun Oh
 description: Private Data in Hyperledger fabric
 ---
@@ -64,7 +65,6 @@ private data can be purged if it has been modified for a configurable number of 
 - https://medium.com/everis-blockchain/hyperledger-fabric-private-data-tutorial-dcd73dcf1ed5
 - https://hyperledger-fabric.readthedocs.io/en/latest/private_data_tutorial.html
 - https://miiingo.tistory.com/193
-
 
 
 

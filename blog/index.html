@@ -4,26 +4,53 @@
 layout: page
 title: Blog
 ---
-<section class="list">
-	{% if site.posts.size == 0 %}
-		<p class="text-center">Nothing published yet!</p>
-	{% elsif site.paginate %}
-		{% for post in paginator.posts %}
-			{% if post.category == 'blog' %}
-				{% if post.hidden != true %}
-					{% include blog-post.html %}
-				{% endif %}
-			{% endif %}
-		{% endfor %}
+{% assign blog_posts = site.posts | where: "category", "blog" %}
 
-		{% include pagination.html%}
-	{% else %}
-		{% for post in site.posts %}
-			{% if post.category == 'blog' %}
-				{% if post.hidden != true %}
-					{% include blog-post.html %}
-				{% endif %}
-			{% endif %}
-		{% endfor %}
-	{% endif %}
+<section class="blog-category-nav" aria-label="Blog categories">
+	<a href="#all-posts">All Posts <span>{{ blog_posts.size }}</span></a>
+	{% for category in site.data.blog_categories %}
+		{% assign category_posts = blog_posts | where: "blog_category", category.key %}
+		{% if category_posts.size > 0 %}
+		<a href="#{{ category.key }}">{{ category.name }} <span>{{ category_posts.size }}</span></a>
+		{% endif %}
+	{% endfor %}
 </section>
+
+{% if blog_posts.size == 0 %}
+	<p class="text-center">Nothing published yet!</p>
+{% else %}
+	{% for category in site.data.blog_categories %}
+		{% assign category_posts = blog_posts | where: "blog_category", category.key %}
+		{% if category_posts.size > 0 %}
+		<section class="blog-category-section" id="{{ category.key }}">
+			<header class="blog-category-header">
+				<h2>{{ category.name }}</h2>
+				<p>{{ category.description }}</p>
+			</header>
+			<div class="list blog-category-list">
+				{% for post in category_posts %}
+					{% if post.hidden != true %}
+						{% include blog-post.html %}
+					{% endif %}
+				{% endfor %}
+			</div>
+		</section>
+		{% endif %}
+	{% endfor %}
+
+	<section class="blog-category-section" id="all-posts">
+		<header class="blog-category-header">
+			<h2>All Posts</h2>
+			<p>Everything in reverse chronological order.</p>
+		</header>
+		<div class="list blog-category-list">
+			{% for post in site.posts %}
+				{% if post.category == 'blog' %}
+					{% if post.hidden != true %}
+					{% include blog-post.html %}
+					{% endif %}
+				{% endif %}
+			{% endfor %}
+		</div>
+	</section>
+{% endif %}
