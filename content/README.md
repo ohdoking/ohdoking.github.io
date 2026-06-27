@@ -12,6 +12,8 @@ This site is intentionally static. Use this folder as a working area when you wa
 6. Build and review the site locally.
 7. Commit and push the branch.
 
+Raw Notion exports are ignored by git because they may contain private notes, interview preparation, and personal material. Commit only refined public content.
+
 ## LinkedIn
 
 LinkedIn is treated as a public profile link, not as an automated data source. Update the LinkedIn profile itself, then copy any career or profile text you want to publish into the refined content or `_data` files.

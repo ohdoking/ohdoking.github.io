@@ -1,0 +1,57 @@
+---
+layout: page
+title: Study
+---
+
+<h1 class="title">Study</h1>
+
+<p>
+    Refined public notes imported from my Notion Study workspace. Raw exports stay private and are not published.
+</p>
+
+<h2>Import Summary</h2>
+
+<ul>
+    <li>Public candidate Markdown pages reviewed: 367</li>
+    <li>Published blog posts created: 3</li>
+    <li>Portfolio metadata updates: 1</li>
+    <li>Public categories tracked: {{ site.data.study_categories.size }}</li>
+</ul>
+
+<h2>Categories</h2>
+
+<p>
+    Private notes are not imported into this site.
+</p>
+
+{% for category in site.data.study_categories %}
+<h3>{{ category.name }}</h3>
+<p>{{ category.summary }}</p>
+<ul>
+    <li>Raw Markdown pages: {{ category.raw_markdown_count }}</li>
+    <li>Published posts: {{ category.published_count }}</li>
+    {% if category.portfolio_updates %}
+    <li>Portfolio updates: {{ category.portfolio_updates }}</li>
+    {% endif %}
+    <li>Status: {{ category.status }}</li>
+</ul>
+
+{% assign has_posts = false %}
+{% for post in site.posts %}
+    {% if post.study_category == category.name %}
+        {% assign has_posts = true %}
+    {% endif %}
+{% endfor %}
+
+{% if has_posts %}
+<ul>
+    {% for post in site.posts %}
+        {% if post.study_category == category.name %}
+        <li>
+            <a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
+        </li>
+        {% endif %}
+    {% endfor %}
+</ul>
+{% endif %}
+{% endfor %}

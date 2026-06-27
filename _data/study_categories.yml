@@ -1,0 +1,43 @@
+- name: Programming
+  raw_name: Programing
+  raw_markdown_count: 220
+  published_count: 2
+  status: In progress
+  summary: "Backend, JVM, Spring, database, security, cloud, and software engineering notes."
+- name: AI
+  raw_name: AI
+  raw_markdown_count: 30
+  published_count: 1
+  status: In progress
+  summary: "Machine learning fundamentals, LLMs, Transformers, and applied AI notes."
+- name: Project
+  raw_name: Project
+  raw_markdown_count: 68
+  published_count: 0
+  portfolio_updates: 1
+  status: Curated into portfolio
+  summary: "Hackathon ideas, project planning notes, demos, and presentation material."
+- name: Space
+  raw_name: Space
+  raw_markdown_count: 18
+  published_count: 0
+  status: Backlog
+  summary: "Satellite, geospatial, and space technology study notes."
+- name: Science and Math
+  raw_name: Science&Math
+  raw_markdown_count: 16
+  published_count: 0
+  status: Backlog
+  summary: "Science and math learning notes."
+- name: Language
+  raw_name: Language
+  raw_markdown_count: 10
+  published_count: 0
+  status: Backlog
+  summary: "Language learning notes."
+- name: ETC
+  raw_name: ETC
+  raw_markdown_count: 5
+  published_count: 0
+  status: Backlog
+  summary: "Miscellaneous notes that need manual review."

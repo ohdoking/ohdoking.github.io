@@ -22,6 +22,7 @@
 - name: STAR-UP
   source: BAD1 Hackathon
   type: Hackathon project
+  url: https://github.com/hrmomeni/starup
   summary: "AI platform connecting researchers, founders, and investors."
   recognition: "1st place overall and Track 1 winner; invited to present to the Mayor of Berlin at BAD1 Conference"
   stack:

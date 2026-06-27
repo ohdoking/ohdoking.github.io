@@ -4,3 +4,5 @@ _site
 .bundle
 vendor/bundle
 .DS_Store
+content/raw/notion/*
+!content/raw/notion/.gitkeep
