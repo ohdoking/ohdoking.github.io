@@ -19,6 +19,7 @@ Raw export reviewed from `content/raw/notion/Study`.
 - Added a refined blog post from the Java volatile study note.
 - Added a refined blog post from the Transformer self-attention study note.
 - Added 50 additional refined public study notes from Programming, AI, and Project candidates.
+- Added 2 curated GraphQL diagrams from the raw Notion media export.
 - Added the STAR-UP GitHub URL from the BAD1 hackathon note.
 - Added a Study page that groups refined public posts by Study category.
 
@@ -30,12 +31,21 @@ The selected Notion databases did not include `Created` or `Updated` columns for
 - Programming posts: 34
 - AI posts: 13
 - Project posts: 6
+- Curated Notion media assets: 2
 
 ## Second Batch
 
 - Programming: 32 new public notes covering Spring, JVM, databases, networking, security, cloud, and AI backend architecture.
 - AI: 12 new public notes covering neural networks, optimization, sequence models, generative models, embeddings, and loss functions.
 - Project: 6 new public notes converted into shareable hackathon, meetup, and project planning reflections.
+
+## Media Curation
+
+- Reviewed Study media candidates from Programming, AI, and Project.
+- Raw Study media contains 2,291 image files: 2,266 PNG, 24 JPEG, and 1 GIF.
+- Published only the GraphQL diagrams that looked directly useful for the public article and low risk to expose.
+- Deferred RAG, PostgreSQL, MS AI Agents Hackathon, Kaggle, AI Search, and AI lecture screenshots because many appear to be third-party slides, product screenshots, or private/future ideation.
+- Details are tracked in `content/refined/notion-media-curation.md`.
 
 ## Validation Result
 

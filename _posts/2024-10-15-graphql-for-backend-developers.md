@@ -24,6 +24,10 @@ The main idea is simple: the client asks for the exact shape of data it needs, a
 
 In practice, GraphQL is useful when the frontend needs flexible data shapes, but the backend still wants a strongly typed API contract.
 
+![REST and GraphQL request flow]({{ site.url }}/assets/images/study/graphql/rest-vs-graphql-flow.png)
+
+REST and GraphQL both keep the database behind the server. The important difference is that GraphQL lets the client describe the response shape while the server still owns validation, authorization, and data access.
+
 ## Quick Summary
 
 - GraphQL is an API query language and runtime, not a database.
@@ -203,6 +207,8 @@ A GraphQL request usually follows this flow:
 3. Resolver functions fetch data from databases, services, or other APIs.
 4. Server assembles the response in the requested shape.
 5. Client receives only the fields it asked for.
+
+![GraphQL resolver request lifecycle]({{ site.url }}/assets/images/study/graphql/graphql-resolver-flow.png)
 
 The resolver layer is where backend architecture matters. A GraphQL API can still call SQL databases, REST services, Kafka-backed read models, or other microservices behind the scenes.
 
