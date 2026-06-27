@@ -1,21 +1,21 @@
 - name: Programming
   raw_name: Programing
   raw_markdown_count: 220
-  published_count: 2
+  published_count: 34
   status: In progress
   summary: "Backend, JVM, Spring, database, security, cloud, and software engineering notes."
 - name: AI
   raw_name: AI
   raw_markdown_count: 30
-  published_count: 1
+  published_count: 13
   status: In progress
   summary: "Machine learning fundamentals, LLMs, Transformers, and applied AI notes."
 - name: Project
   raw_name: Project
   raw_markdown_count: 68
-  published_count: 0
+  published_count: 6
   portfolio_updates: 1
-  status: Curated into portfolio
+  status: In progress
   summary: "Hackathon ideas, project planning notes, demos, and presentation material."
 - name: Space
   raw_name: Space
