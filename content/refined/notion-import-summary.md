@@ -22,6 +22,7 @@ Raw export reviewed from `content/raw/notion/Study`.
 - Added 2 curated GraphQL diagrams from the raw Notion media export.
 - Added the STAR-UP GitHub URL from the BAD1 hackathon note.
 - Added a Study page that groups refined public posts by Study category.
+- Added `content/refined/published-content-index.md` as a shareable record of published public content.
 
 The selected Notion databases did not include `Created` or `Updated` columns for these pages. The generated posts use editorial publication dates distributed across the study timeline instead of the export date.
 

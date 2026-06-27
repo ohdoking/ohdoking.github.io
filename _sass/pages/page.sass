@@ -244,3 +244,187 @@
 
             &__header h2
                 font-size: 1.8rem
+
+.study
+    .study-intro
+        margin-bottom: 32px
+
+        .title
+            margin-bottom: 20px
+
+        &__summary
+            max-width: 680px
+            margin: 0
+            color: $alpha
+            font-size: 1.6rem
+            line-height: 1.7
+
+    .study-stat-grid
+        display: grid
+        grid-template-columns: repeat(4, minmax(0, 1fr))
+        gap: 12px
+        margin: 0 0 32px
+
+    .study-stat
+        padding: 16px
+        border: 1px solid $epsilon
+        border-radius: 6px
+        background: #fff
+
+        strong
+            display: block
+            margin-bottom: 6px
+            color: $beta
+            font-size: 2.2rem
+            font-weight: 600
+
+        span
+            display: block
+            color: $gama
+            font-size: 1.3rem
+            line-height: 1.5
+
+    .study-category-nav
+        display: flex
+        flex-wrap: wrap
+        gap: 8px
+        margin: 0 0 38px
+
+        a
+            display: inline-flex
+            align-items: center
+            gap: 6px
+            min-height: 32px
+            padding: 0 10px
+            color: $beta
+            font-size: 1.3rem
+            font-weight: 400
+            text-decoration: none
+            border: 1px solid $epsilon
+            border-radius: 6px
+            background: #fff
+
+            &:hover
+                color: $delta
+                border-color: $delta
+
+        span
+            color: $gama
+            font-size: 1.1rem
+
+    .study-category-section
+        margin: 0 0 54px
+        scroll-margin-top: 24px
+
+    .study-category-header
+        display: flex
+        justify-content: space-between
+        gap: 20px
+        align-items: flex-start
+        margin-bottom: 16px
+
+        h2
+            margin: 0 0 8px
+
+        p
+            margin: 0
+            color: $gama
+            font-size: 1.4rem
+            line-height: 1.6
+
+    .study-category-meta
+        display: flex
+        flex-wrap: wrap
+        justify-content: flex-end
+        gap: 8px
+
+        span
+            display: inline-flex
+            align-items: center
+            min-height: 28px
+            padding: 0 9px
+            color: $gama
+            font-size: 1.2rem
+            background: #f8f8f8
+            border: 1px solid $epsilon
+            border-radius: 6px
+
+    .study-topic-group
+        margin-bottom: 28px
+
+        &:last-child
+            margin-bottom: 0
+
+    .study-topic-header
+        margin-bottom: 12px
+
+        h3
+            margin: 0 0 6px
+            font-size: 1.8rem
+
+        p
+            margin: 0 0 8px
+            color: $gama
+            font-size: 1.35rem
+            line-height: 1.6
+
+        span
+            color: $gama
+            font-size: 1.2rem
+
+    .study-post-list
+        border-top: 1px solid $epsilon
+        padding-top: 10px
+
+    .study-post-item
+        width: 95%
+        margin: 0 auto
+
+    .study-post-link
+        display: block
+        padding: 16px 0
+        text-decoration: none
+
+        &:hover h4
+            color: $delta
+
+        h4
+            margin: 4px 0 0
+            color: $beta
+            font-size: 1.8rem
+            font-weight: 500
+            line-height: 1.45
+            transition: all ease-in-out .2s
+
+    .study-post-date
+        display: block
+        color: $gama
+        font-size: 1.25rem
+        line-height: 1.4
+
+    .study-empty-state
+        margin: 0
+        padding: 18px 0 0
+        color: $gama
+        border-top: 1px solid $epsilon
+
+    @media #{$tablet}
+        .study-stat-grid
+            grid-template-columns: repeat(2, minmax(0, 1fr))
+
+    @media #{$mobile}
+        .study-stat-grid
+            grid-template-columns: 1fr
+
+        .study-category-header
+            display: block
+
+        .study-category-meta
+            justify-content: flex-start
+            margin-top: 12px
+
+        .study-post-item
+            width: 100%
+
+        .study-post-link h4
+            font-size: 1.6rem

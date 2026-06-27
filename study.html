@@ -3,55 +3,103 @@ layout: page
 title: Study
 ---
 
-<h1 class="title">Study</h1>
+{% assign published_study_posts = site.posts | where_exp: "post", "post.study_category" %}
 
-<p>
-    Refined public notes imported from my Notion Study workspace. Raw exports stay private and are not published.
-</p>
+<div class="study">
+    <div class="study-intro">
+        <h1 class="title">Study</h1>
+        <p class="study-intro__summary">
+            Public study archive refined from my Notion workspace. Raw exports stay private; only cleaned, shareable notes are published here.
+        </p>
+    </div>
 
-<h2>Import Summary</h2>
+    <div class="study-stat-grid">
+        <div class="study-stat">
+            <strong>{{ published_study_posts.size }}</strong>
+            <span>Published notes</span>
+        </div>
+        <div class="study-stat">
+            <strong>367</strong>
+            <span>Raw pages reviewed</span>
+        </div>
+        <div class="study-stat">
+            <strong>{{ site.data.study_categories.size }}</strong>
+            <span>Tracked categories</span>
+        </div>
+        <div class="study-stat">
+            <strong>2</strong>
+            <span>Curated media assets</span>
+        </div>
+    </div>
 
-<ul>
-    <li>Public candidate Markdown pages reviewed: 367</li>
-    <li>Published blog posts created: 3</li>
-    <li>Portfolio metadata updates: 1</li>
-    <li>Public categories tracked: {{ site.data.study_categories.size }}</li>
-</ul>
+    <div class="study-category-nav">
+        {% for category in site.data.study_categories %}
+        {% assign category_posts = site.posts | where: "study_category", category.name %}
+        <a href="#{{ category.name | slugify }}">
+            {{ category.name }}
+            <span>{{ category_posts.size }}</span>
+        </a>
+        {% endfor %}
+    </div>
 
-<h2>Categories</h2>
+    {% for category in site.data.study_categories %}
+    {% assign category_posts = site.posts | where: "study_category", category.name %}
+    <section class="study-category-section" id="{{ category.name | slugify }}">
+        <div class="study-category-header">
+            <div>
+                <h2>{{ category.name }}</h2>
+                <p>{{ category.summary }}</p>
+            </div>
+            <div class="study-category-meta">
+                <span>{{ category_posts.size }} published</span>
+                <span>{{ category.raw_markdown_count }} raw pages</span>
+                <span>{{ category.status }}</span>
+            </div>
+        </div>
 
-<p>
-    Private notes are not imported into this site.
-</p>
+        {% if category_posts.size > 0 %}
+            {% assign has_topic_groups = false %}
+            {% for topic in site.data.blog_categories %}
+                {% assign topic_posts = category_posts | where: "blog_category", topic.key %}
+                {% if topic_posts.size > 0 %}
+                    {% assign has_topic_groups = true %}
+                    <div class="study-topic-group">
+                        <div class="study-topic-header">
+                            <h3>{{ topic.name }}</h3>
+                            <p>{{ topic.description }}</p>
+                            <span>{{ topic_posts.size }} notes</span>
+                        </div>
+                        <div class="study-post-list">
+                            {% for post in topic_posts %}
+                            <article class="study-post-item">
+                                <a class="study-post-link" href="{{ site.url }}{{ post.url }}">
+                                    <span class="study-post-date">{{ post.date | date: "%b %d, %Y" }}</span>
+                                    <h4>{{ post.title }}</h4>
+                                </a>
+                            </article>
+                            {% endfor %}
+                        </div>
+                    </div>
+                {% endif %}
+            {% endfor %}
 
-{% for category in site.data.study_categories %}
-<h3>{{ category.name }}</h3>
-<p>{{ category.summary }}</p>
-<ul>
-    <li>Raw Markdown pages: {{ category.raw_markdown_count }}</li>
-    <li>Published posts: {{ category.published_count }}</li>
-    {% if category.portfolio_updates %}
-    <li>Portfolio updates: {{ category.portfolio_updates }}</li>
-    {% endif %}
-    <li>Status: {{ category.status }}</li>
-</ul>
-
-{% assign has_posts = false %}
-{% for post in site.posts %}
-    {% if post.study_category == category.name %}
-        {% assign has_posts = true %}
-    {% endif %}
-{% endfor %}
-
-{% if has_posts %}
-<ul>
-    {% for post in site.posts %}
-        {% if post.study_category == category.name %}
-        <li>
-            <a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
-        </li>
+            {% unless has_topic_groups %}
+            <div class="study-post-list">
+                {% for post in category_posts %}
+                <article class="study-post-item">
+                    <a class="study-post-link" href="{{ site.url }}{{ post.url }}">
+                        <span class="study-post-date">{{ post.date | date: "%b %d, %Y" }}</span>
+                        <h4>{{ post.title }}</h4>
+                    </a>
+                </article>
+                {% endfor %}
+            </div>
+            {% endunless %}
+        {% else %}
+        <p class="study-empty-state">
+            No public posts are published in this category yet. The raw notes remain private until they are cleaned and verified for publishing.
+        </p>
         {% endif %}
+    </section>
     {% endfor %}
-</ul>
-{% endif %}
-{% endfor %}
+</div>
