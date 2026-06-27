@@ -38,6 +38,7 @@
 - name: STAR-UP
   slug: star-up
   featured: true
+  case_study_url: /projects/star-up/
   source: BAD1 Hackathon
   type: Hackathon project
   role: AI platform builder
@@ -56,6 +57,7 @@
       url: https://github.com/hrmomeni/starup
 - name: AI Safety Chrome Extension
   slug: ai-safety-chrome-extension
+  case_study_url: /projects/ai-safety-chrome-extension/
   source: SAP and KPMG AI Cybersecurity Hackathon 2025
   type: Hackathon project
   role: AI and browser tooling builder
@@ -106,6 +108,7 @@
     - Terraform
 - name: Aristoteles 2.0
   slug: aristoteles-2
+  case_study_url: /projects/aristoteles-2/
   source: Ampero GmbH
   type: Production backend platform
   role: Backend developer
