@@ -12,7 +12,7 @@ This site is intentionally static. Use this folder as a working area when you wa
 6. Build and review the site locally.
 7. Commit and push the branch.
 
-Raw Notion exports are ignored by git because they may contain private notes, interview preparation, and personal material. Commit only refined public content.
+Raw Notion exports are ignored by git because they may contain private notes and personal material. Commit only refined public content.
 
 ## LinkedIn
 
