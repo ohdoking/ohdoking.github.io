@@ -1,0 +1,20 @@
+- organization: SoftwareInLife
+  role: Full-stack Developer
+  period: "2 years 6 months"
+  highlights:
+    - "Developed full-stack web services."
+    - "Analyzed Cloud Foundry, an open-source PaaS."
+    - "Built experience in application structure and web service development practices."
+- organization: NiceDNB
+  role: Backend Developer
+  period: "1 year"
+  highlights:
+    - "Developed backend applications."
+    - "Designed and optimized SQL queries."
+    - "Refactored legacy code."
+- organization: YAPP
+  role: Android Developer and Mentor
+  period: "2 years"
+  highlights:
+    - "Developed Android applications."
+    - "Tutored university students in an IT club."

@@ -1,0 +1,47 @@
+name: Dokeun Oh
+headline: Java full-stack developer
+summary:
+  - "I am a Java full-stack developer with experience across backend services, web applications, cloud platforms, and developer tooling."
+  - "My work has included Spring-based backend development, full-stack web service development, Cloud Foundry platform analysis, SQL query design, legacy code refactoring, Android application development, and student mentoring."
+skills:
+  - group: Languages
+    items:
+      - Java
+      - JavaScript
+      - SQL
+      - HTML
+      - CSS
+  - group: Backend
+    items:
+      - Spring
+      - Spring Boot
+      - Hibernate
+      - JUnit
+      - Node.js
+  - group: Frontend
+    items:
+      - AngularJS
+      - Backbone.js
+      - Sass
+      - Bootstrap
+      - Webpack
+  - group: Data
+    items:
+      - MySQL
+      - Oracle
+      - MongoDB
+      - Firebase
+  - group: Cloud and DevOps
+    items:
+      - AWS
+      - Google Cloud Platform
+      - Docker
+      - Git
+      - Continuous Integration
+  - group: Practices
+    items:
+      - Object-oriented programming
+      - Test-driven development
+      - Self-test automation
+      - Agile
+      - Kanban
