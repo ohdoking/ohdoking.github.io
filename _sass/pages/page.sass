@@ -13,6 +13,60 @@
         margin: 0 auto
         display: block
 
+    .about-intro
+        margin: 36px 0 30px
+
+        &__eyebrow
+            margin-bottom: 10px
+            color: $delta
+            font-size: 1.3rem
+            font-weight: 600
+            letter-spacing: 0
+            text-transform: uppercase
+
+        h1
+            margin: 0 0 20px
+            font-size: 3.2rem
+            line-height: 1.2
+
+        p
+            margin-bottom: 14px
+
+    .about-highlights
+        display: grid
+        gap: 12px
+        margin: 28px 0 34px
+
+    .about-highlight
+        padding: 14px 16px
+        border: 1px solid $epsilon
+        border-left: 3px solid $delta
+        border-radius: 6px
+        background: #fff
+
+        strong
+            display: block
+            margin-bottom: 5px
+            color: $beta
+            font-size: 1.5rem
+            font-weight: 600
+
+        span
+            display: block
+            color: $alpha
+            font-size: 1.4rem
+            line-height: 1.6
+
+    .about-focus
+        margin: 32px 0 38px
+
+        h2
+            margin-bottom: 12px
+
+        ul
+            margin-top: 0
+            padding-left: 20px
+
     .profile-tabs
         margin: 40px 0
 
@@ -173,6 +227,10 @@
     @media #{$mobile}
         img
             width: 72%
+
+        .about-intro
+            h1
+                font-size: 2.4rem
 
         .profile-tabs
             margin-top: 32px

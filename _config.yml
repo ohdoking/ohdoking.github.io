@@ -1,9 +1,9 @@
 # main text of home
 name: Dokeun Oh
-bio: Backend engineer building cloud-native, event-driven, and AI-powered systems.
+bio: Backend engineer building reliable cloud platforms, event-driven services, and practical AI systems.
 
 # twitter summary info
-description: Backend engineer with 10+ years of experience across fintech, energy, mobility, cloud-native systems, and AI-driven applications.
+description: Backend engineer with 10+ years of experience shipping cloud-native platforms, event-driven services, and AI-powered products across mobility, energy, and fintech.
 
 # if it's an external image, update below for true
 # better with square images
@@ -56,7 +56,7 @@ email: ohdoking@gmail.com
 authors:
     dokeunoh:
         name: Dokeun Oh
-        bio: A Man who travels the world eating noodles
+        bio: Backend engineer focused on cloud-native platforms, resilient services, and practical AI systems.
         external-image: false
         picture: assets/images/profile.jpg
         twitter: ohdoking

@@ -1,10 +1,23 @@
 name: Dokeun Oh
 headline: Backend Engineer
+intro_title: "I build reliable backend systems where cloud infrastructure, distributed services, and practical AI meet."
 summary:
-  - "Backend engineer with 10+ years of experience building production systems across fintech, energy, and mobility."
-  - "Specialized in cloud-native architecture, microservices, event-driven systems, and backend platforms on AWS and Azure."
-  - "Actively builds and ships AI-driven applications, including multi-agent systems and LLM-powered products, with 6+ hackathon wins."
-  - "Studies ML fundamentals hands-on, including Transformers, VAE, and Seq2Seq, to understand the underlying systems deeply."
+  - "I am a backend engineer based in Berlin with 10+ years of experience shipping production systems across mobility, renewable energy, fintech, and platform products."
+  - "My core work is designing cloud-native services, event-driven architectures, and backend platforms that stay maintainable under real operational pressure."
+  - "Recently I have been applying AI agents, RAG, and LLM-powered workflows to internal tools and customer-facing systems, while continuing to study the ML fundamentals behind them."
+highlights:
+  - label: "10+ years"
+    text: "Backend engineering experience across Germany and South Korea."
+  - label: "Cloud-native"
+    text: "AWS, Azure, Kubernetes, Terraform, CI/CD, and production service operations."
+  - label: "Event-driven"
+    text: "Kafka, RabbitMQ, SQS, microservices, integrations, and async workflows."
+  - label: "AI systems"
+    text: "Multi-agent applications, RAG, LangChain, LangGraph, and LLM product prototypes."
+focus:
+  - "Designing services that are observable, testable, and easy to operate."
+  - "Turning ambiguous product or platform problems into small, shippable backend systems."
+  - "Bridging backend engineering with AI tooling without losing reliability or security."
 skills:
   - group: Languages
     items:

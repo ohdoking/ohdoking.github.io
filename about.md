@@ -6,13 +6,39 @@ layout: page
 
 {% assign profile = site.data.profile %}
 
-{% if profile.headline %}
-<p>{{ profile.headline }}</p>
+<section class="about-intro">
+	{% if profile.headline %}
+	<p class="about-intro__eyebrow">{{ profile.headline }}</p>
+	{% endif %}
+	{% if profile.intro_title %}
+	<h1>{{ profile.intro_title }}</h1>
+	{% endif %}
+	{% for paragraph in profile.summary %}
+	<p>{{ paragraph }}</p>
+	{% endfor %}
+</section>
+
+{% if profile.highlights %}
+<section class="about-highlights" aria-label="Profile highlights">
+	{% for highlight in profile.highlights %}
+	<div class="about-highlight">
+		<strong>{{ highlight.label }}</strong>
+		<span>{{ highlight.text }}</span>
+	</div>
+	{% endfor %}
+</section>
 {% endif %}
 
-{% for paragraph in profile.summary %}
-<p>{{ paragraph }}</p>
-{% endfor %}
+{% if profile.focus %}
+<section class="about-focus">
+	<h2>What I Focus On</h2>
+	<ul>
+		{% for item in profile.focus %}
+		<li>{{ item }}</li>
+		{% endfor %}
+	</ul>
+</section>
+{% endif %}
 
 <section class="profile-tabs" aria-label="Experience and skills">
 	<input class="profile-tabs__input" type="radio" name="profile-tabs" id="profile-tab-experience" checked>
